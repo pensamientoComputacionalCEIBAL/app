@@ -1,0 +1,36 @@
+{
+ "name": "Referentes - Pensamiento Computacional",
+ "short_name": "Referentes - P.C Uruguay",
+ "description": "Referentes del programa de Pensamiento Computacional – CEIBAL, Uruguay",
+ "background_color": "#f8f9fa",
+ "theme_color": "#f8f9fa",
+ "orientation": "portrait",
+ "display": "standalone",
+ "start_url": "./?utm_source=web_app_manifest",
+ "scope": "./",
+ "lang": "es-MX",
+ "icons": [
+
+  { "src": "./img/icon_512.png",
+    "sizes": "512x512",
+    "type": "image/png" },
+
+  { "src": "./img/icon_256.png",
+    "sizes": "256x256",
+    "type": "image/png" },
+
+  { "src": "./img/icon_128.png",
+    "sizes": "128x128",
+    "type": "image/png" },
+
+  { "src": "./img/icon_64.png",
+    "sizes": "64x64",
+    "type": "image/png" },
+
+  { "src": "./img/icon_32.png",
+    "sizes": "32x32",
+    "type": "image/png" },
+
+  { "src": "./img/favicon.png",
+    "sizes": "16x16",
+    "type": "image/png" } ] }
