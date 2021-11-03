@@ -76,7 +76,7 @@ function validarSession () {
 
 function registrarSW () {
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./js/94kfd34dsla.js')
+  navigator.serviceWorker.register('./94kfd34dsla.js')
   .then(reg => console.log('Registro de SW exitoso', reg))
   .catch(err => console.warn('Error al tratar de registrar el SW', err))
 }
