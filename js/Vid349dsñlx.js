@@ -50,19 +50,19 @@ function cargarPagina () {
   let paginaActualCompleta = jQuery(location).attr('href');
   let paginaActual = paginaActualCompleta.slice(paginaActualCompleta.lastIndexOf("/")+1,paginaActualCompleta.length);
   if (paginaActual.indexOf("#") != -1 ) { paginaActual = paginaActual.slice(0,paginaActual.indexOf("#")); }
-  if (paginaActual != "Index.html") { validarSession (); }
+  if (paginaActual != "index.html") { validarSession (); }
   switch (paginaActual) {
-    case "Index.html":
+    case "index.html":
       registrarSW ();
       $("input[type='text']").focus();
     break;
-    case "Main.html":
+    case "main.html":
       $("#usuario").html(m1_Main);
       $("#avatar").attr("src",sessionStorage.getItem('urlImagen'));
       $("#fecha").html(m2_Main);
     getDatos("Main");
     break;
-    case "SVC.html":
+    case "svc.html":
       getDatos("SVC");
       $("#valorfil").focus();
     break;  
@@ -71,7 +71,7 @@ function cargarPagina () {
 
 function validarSession () {
   if (sessionStorage.getItem('nombre') == null) {
-    window.open("Index.html","_self"); }
+    window.open("index.html","_self"); }
 }
 
 function registrarSW () {
@@ -137,7 +137,7 @@ function loginIndex(datosRecibidos) {
       if (datosRecibidos.values[i][0] == user && datosRecibidos.values[i][1] == pass) {
         sessionStorage.setItem('nombre', datosRecibidos.values[i][2]);
         sessionStorage.setItem('urlImagen', datosRecibidos.values[i][3]);
-        window.open("Main.html","_self")
+        window.open("main.html","_self")
         return; }
     i--; }
     errorSys("#error", m3_Index); } 
