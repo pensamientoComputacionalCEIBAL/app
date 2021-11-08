@@ -11,10 +11,11 @@ let gruposCentro = [];
 
 $( document ).ready(function() {
 
+// Página de inicio (index.html)
 $( "#eIndex" ).click(function() { validarCamposIndex(); });
 $( "#rIndex" ).click(function() { reiniciarInputsIndex(); });
 
-
+// Página Consultas S.V.C
 $( "#fruee" ).click(function() { cargarFiltroVisual(this); });
 $( "#flocalidad" ).click(function() { cargarFiltroVisual(this); });
 $( "#fdepartamento" ).click(function() { cargarFiltroVisual(this); });
@@ -28,6 +29,10 @@ $("#valorfil").keypress(function(e) {
     buscarCentrosAsociados();
     $("#valorfil").focus();
     return false; } });
+
+// Al 'Salir' del sistema
+
+$( "#sSys" ).click(function() { salirSistema(); });
 
 cargarPagina ();
 
@@ -48,7 +53,9 @@ let m1_SVC = "<center><div class='alert alert-danger m-2'role='alert'> ¡UPS! ¡
 
 function cargarPagina () {
   let paginaActualCompleta = jQuery(location).attr('href');
-  let paginaActual = paginaActualCompleta.slice(paginaActualCompleta.lastIndexOf("/")+1,paginaActualCompleta.length);
+  let paginaActual = paginaActualCompleta.slice(
+  paginaActualCompleta.lastIndexOf("/") + 1, paginaActualCompleta.length);
+
   if (paginaActual.indexOf("#") != -1 ) { paginaActual = paginaActual.slice(0,paginaActual.indexOf("#")); }
   if (paginaActual != "index.html") { validarSession (); }
   switch (paginaActual) {
@@ -58,9 +65,9 @@ function cargarPagina () {
     break;
     case "main.html":
       $("#usuario").html(m1_Main);
-      $("#avatar").attr("src",sessionStorage.getItem('urlImagen'));
+      $("#avatar").attr("src", sessionStorage.getItem('urlImagen'));
       $("#fecha").html(m2_Main);
-    getDatos("Main");
+      getDatos("Main");
     break;
     case "svc.html":
       getDatos("SVC");
@@ -70,22 +77,27 @@ function cargarPagina () {
 }
 
 function validarSession () {
-  if (sessionStorage.getItem('nombre') == null) {
+  if (sessionStorage.getItem('nombre') == null ||
+  sessionStorage.getItem('nombre') == 'null') {
     window.open("index.html","_self"); }
 }
 
 function registrarSW () {
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./94kfd34dsla.js')
-  .then(reg => console.log('Registro de SW exitoso', reg))
-  .catch(err => console.warn('Error al tratar de registrar el SW', err))
-}
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./94kfd34dsla.js')
+    .then(reg => console.log('Registro de SW exitoso', reg))
+    .catch(err => console.warn('Error al tratar de registrar el SW', err)) } 
 }
 
 function errorSys(objeto,mensaje) {
   $(objeto).hide();
   $(objeto).html(mensaje);
   $(objeto).fadeIn(); }
+
+function salirSistema () {
+  sessionStorage.setItem('nombre', null);
+  sessionStorage.setItem('urlImagen', null);
+}
 
 function getDatos (pagina) {
   let apiKey = 'AIzaSyAVvMA2r0J3skLgWq2g0JX6facQN9BXsXM';
@@ -114,7 +126,7 @@ function getDatos (pagina) {
   api.send();
 
   api.onreadystatechange = function () {
-    if (this.status == 200 && this.readyState == 4){
+    if (this.status == 200 && this.readyState == 4) {
       datosRecibidos = JSON.parse (this.responseText);
       switch(pagina) {
         case "Index": loginIndex(datosRecibidos); break;
@@ -128,7 +140,7 @@ function getDatos (pagina) {
 // Página Index.
 
 function loginIndex(datosRecibidos) {
-  if (datosRecibidos.values.length <= 1) {
+  if (datosRecibidos == undefined || datosRecibidos.values.length <= 1) {
     errorSys("#error", m2_Index);
     $("#user").focus(); }
   else {
@@ -159,7 +171,7 @@ function reiniciarInputsIndex () {
 // Página Main.
 
 function cargarMensaje (datosRecibidos) {
-  if (datosRecibidos.values.length <= 1) {
+  if (datosRecibidos == undefined || datosRecibidos.values.length <= 1) {
     errorSys("#mensajeGestion", m3_Main);
   }
   else {
@@ -183,7 +195,7 @@ function cargarFiltroVisual(itemSel) {
 
 function cargarInputs(datosRecibidos) {
   let valores = [];
-  if (datosRecibidos.values.length <= 1) {
+  if (datosRecibidos == undefined || datosRecibidos.values.length <= 1) {
     errorSys("#error", m2_Index);
     $("#valorfil").focus(); }
   else {
@@ -197,10 +209,12 @@ function cargarInputs(datosRecibidos) {
     let i = datosRecibidos.values.length - 1;
     while (i >= 0) {
       if (sessionStorage.getItem('nombre') == datosRecibidos.values [i][26] ||
-      sessionStorage.getItem('nombre') == "test" || sessionStorage.getItem('nombre') == "ghost") {
-        if (valores.indexOf(datosRecibidos.values [i][atr])==-1) { valores.push(datosRecibidos.values [i][atr]); }
+      sessionStorage.getItem('nombre') == "test" ||
+      sessionStorage.getItem('nombre') == "ghost") {
+        if (valores.indexOf(datosRecibidos.values [i][atr])== -1) { valores.push(datosRecibidos.values [i][atr]); }
       }
-    i--; }
+      i--; 
+    }
   }
   $( "#valorfil" ).autocomplete({ source: valores });
 }
@@ -212,38 +226,41 @@ function buscarCentrosAsociados() {
   $( "#resultados_i" ).html("");
   if ($("#valorfil").val() != null && $("#valorfil").val() != undefined
   && $("#valorfil").val() != "" ) {
-  let valores = [];
-  if (datosRecibidos == undefined || datosRecibidos.values.length <= 1 ) {
-    errorSys("#error", m2_Index); }
-  else {
-    let atr = null;
-    switch ($("#valorfil").attr("placeholder")) {
-    case "RUEE (NNNNCCC)": atr = 0; break;
-    case "Localidad (Ej.Quebracho)": atr = 3; break;
-    case "Departamento (Ej. Rocha)": atr = 2; break;
-    case "Doc. DA (Ej. 47259101)": atr = 11; break;
-    case "Doc. DR (Ej. rt58936592)": atr = 25; break; }
-    gruposCentro = [];
-    let i = datosRecibidos.values.length - 1;
-    let cadena = null;
-    while (i >= 0) {
-      if (sessionStorage.getItem('nombre') == datosRecibidos.values [i][26] ||
-      sessionStorage.getItem('nombre') == "test" || sessionStorage.getItem('nombre') == "ghost") {
-      if (datosRecibidos.values [i][atr].includes($("#valorfil").val())) {
-        cadena = "<a class='btn btn-outline-secondary m-2' id='" +
-        datosRecibidos.values [i][0] + "' onclick='cargarGrupos(" + 
-        datosRecibidos.values [i][0] + ")' href='#resultados_g' role='button'>" +
-        datosRecibidos.values [i][0] + "</a>";
-        if (valores.indexOf(cadena)==-1) { valores.push(cadena); }
-        gruposCentro.push(datosRecibidos.values [i]);
-      } }
-    i--; }
-    if (valores.length > 0) {
-      valores.sort();
-      valores.forEach(e => $( "#resultados_c" ).html( $( "#resultados_c" ).html() + e ));
+    let valores = [];
+    if (datosRecibidos == undefined || datosRecibidos.values.length <= 1 ) {
+      errorSys("#error", m2_Index); }
+    else {
+      let atr = null;
+      switch ($("#valorfil").attr("placeholder")) {
+        case "RUEE (NNNNCCC)": atr = 0; break;
+        case "Localidad (Ej.Quebracho)": atr = 3; break;
+        case "Departamento (Ej. Rocha)": atr = 2; break;
+        case "Doc. DA (Ej. 47259101)": atr = 11; break;
+        case "Doc. DR (Ej. rt58936592)": atr = 25; break; }
+      gruposCentro = [];
+      let i = datosRecibidos.values.length - 1;
+      let cadena = null;
+      while (i >= 0) {
+        if (sessionStorage.getItem('nombre') == datosRecibidos.values [i][26] ||
+        sessionStorage.getItem('nombre') == "test" || 
+        sessionStorage.getItem('nombre') == "ghost") {
+          if (datosRecibidos.values [i][atr].includes($("#valorfil").val())) {
+            cadena = "<a class='btn btn-outline-secondary m-2' id='" +
+            datosRecibidos.values [i][0] + "' onclick='cargarGrupos(" + 
+            datosRecibidos.values [i][0] + ")' href='#resultados_g' role='button'>" +
+            datosRecibidos.values [i][0] + "</a>";
+            if (valores.indexOf(cadena)==-1) { valores.push(cadena); }
+          gruposCentro.push(datosRecibidos.values [i]);
+          } 
+        }
+        i--; 
+      }
+      if (valores.length > 0) {
+        valores.sort();
+        valores.forEach(e => $( "#resultados_c" ).html( $( "#resultados_c" ).html() + e ));
+      }
+      else { errorSys("#error",m1_SVC); }
     }
-    else { errorSys("#error",m1_SVC); }
-  }
   $("#valorfil").focus();
   }
   else { 
@@ -252,6 +269,7 @@ function buscarCentrosAsociados() {
 }
 
 function cargarGrupos (rueeID) {
+  $( "#error" ).html("");
   $( "#resultados_g" ).html("");
   $( "#resultados_i" ).html("");
   gruposCentro.sort();
@@ -269,10 +287,11 @@ function cargarGrupos (rueeID) {
 }
 
 function cargarInfo (rueeGID) {
+  $( "#error" ).html("");
   $( "#resultados_i" ).html("");
   gruposCentro.forEach( e => {
-  let cadena = null;
-  if (rueeGID.getAttribute('id') == e[0] + e [8] + e[9]) {
+    let cadena = null;
+    if (rueeGID.getAttribute('id') == e[0] + e [8] + e[9]) {
       cadena = "<a class='btn btn-outline-primary text-start m-2'" +
       "role='button' onclick='copiarA(this)'>" +
       "<b>Información del centro: </b>" + e [0] + " (" + "<b>ID N°</b> " + e [1]  + ")<br>" +
@@ -280,21 +299,21 @@ function cargarInfo (rueeGID) {
       "<br> Grupo " + e [8] + e [9] + " " + e [7] + "</a>" + 
       "<a class='btn btn-outline-primary text-start m-2'" +
       "role='button' onclick='copiarA(this)'>" +
-      "<b>Docente de aula: </b>" + e [12] + " " + e [13] + " (" + e [11] + "), " + e [14] +
+      "<b>Docente de aula: </b>" + e [12] + " " + e [13] + " (" + e [11] + "), " + "<br>Correo electrónico (DA): " + e [14] + "<br>Contacto tel. / celular: " + e [15] + 
       "<br><b>Proveedor</b>: " + e [19] +
-      "<br><b>Docente remoto: </b>" + e [22] + " " + e [23] + " (" + e [25] + "), " + e [24] +
+      "<br><b>Docente remoto: </b>" + e [22] + " " + e [23] + " (" + e [25] + "), " + "<br>Correo electrónico (DR): " + e [24] +
       "</a><a class='btn btn-outline-primary text-start m-2'" +
       "role='button' onclick='copiarA(this)'>" +
       "<b>Información de clases de Pensamiento Computacional</b><br>" +
       "Coordinado para los días: " + e [30] + "<br>" +
       "A la hora: " + e [31] + "<br>" +
-      "Desde la fecha: " + e [33] + "</a>"
-      ;
+      "Desde la fecha: " + e [33] + "</a>";
       $( "#resultados_i" ).html(cadena);
       return;
-  }
+    }
   });
 }
 
-function copiarA(val) { navigator.clipboard.writeText(val.innerText); }
-
+function copiarA(val) { 
+  navigator.clipboard.writeText(val.innerText); }
+  
