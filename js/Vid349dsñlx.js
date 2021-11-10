@@ -72,7 +72,10 @@ function cargarPagina () {
     case "svc.html":
       getDatos("SVC");
       $("#valorfil").focus();
-    break;  
+    break;
+    case "info_territorio.html":
+      getDatos("info_territorio");
+    break;
   }
 }
 
@@ -93,6 +96,10 @@ function errorSys(objeto,mensaje) {
   $(objeto).hide();
   $(objeto).html(mensaje);
   $(objeto).fadeIn(); }
+
+function copiarA(val) {
+  navigator.clipboard.writeText(val.innerText);
+  }
 
 function salirSistema () {
   sessionStorage.setItem('nombre', null);
@@ -118,6 +125,10 @@ function getDatos (pagina) {
       idSheets="12kLL0bz0mwkP3EYJRrBG2aOUgEFcrRG3iIhm3n_fuQ8";
       rangoSheets="A:AJ";
     break;
+    case "info_territorio":
+      idSheets="1XS1ngb5eknIeXnfPsSHe5Hnk7XY5LcqQ1oD1DDjPHk0";
+      rangoSheets="A:G";
+    break;
   }
 
   urlCompleta = "https://content-sheets.googleapis.com/v4/spreadsheets/" + 
@@ -132,6 +143,7 @@ function getDatos (pagina) {
         case "Index": loginIndex(datosRecibidos); break;
         case "Main": cargarMensaje(datosRecibidos); break;
         case "SVC": cargarInputs(datosRecibidos); break;
+        case "info_territorio": cargarInfoTerritorio(datosRecibidos); break;
       }
     }
   }
@@ -314,6 +326,28 @@ function cargarInfo (rueeGID) {
   });
 }
 
-function copiarA(val) { 
-  navigator.clipboard.writeText(val.innerText); }
-  
+function cargarInfoTerritorio (datosRecibidos) {
+  if (datosRecibidos == undefined || datosRecibidos.values.length <= 1 ) {
+      errorSys("#a", m2_Index);
+      $( "#infoTerritorio" ).html("");
+  }
+  else {
+    $( "#a" ).html("<strong>¡Atención!</strong> Última actualización del sistema "+
+    "desde S.V.C: <strong>" + datosRecibidos.values [0][2] + "</strong>");
+    let cadena = null;
+    cadena = "- " + datosRecibidos.values [0][0] + ": <strong>" + datosRecibidos.values [0][1] + "</strong><br>" +
+    "- " + datosRecibidos.values [1][0] + ": <strong>" + datosRecibidos.values [1][1] + "</strong><hr>";
+    let i = 2;
+    while (i < datosRecibidos.values.length) {
+      cadena = cadena +
+      "<a class='btn btn-outline-success m-1' role='button' onclick='copiarA(this)'>" + 
+      datosRecibidos.values [i][0] + ", tiene <strong>" + datosRecibidos.values [i][2] +
+      "</strong> grupos distribuidos en <strong>" + datosRecibidos.values [i][3] + "</strong> centros (" +
+      "representa un <strong>" + datosRecibidos.values [i][4] + "</strong> % del total de centros)</a>" +
+      "<a class='btn btn-outline-success m-1' role='button' onclick='copiarA(this)'>" + datosRecibidos.values [i][5] + "</a>" +
+      "<a class='btn btn-outline-success m-1' role='button' onclick='copiarA(this)'>" + datosRecibidos.values [i][6] + "</a><br>" 
+      i++;
+    }
+    $( "#infoTerritorio" ).html(cadena);
+  }
+}
