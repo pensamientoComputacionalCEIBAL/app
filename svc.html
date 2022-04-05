@@ -26,46 +26,7 @@
 </head>
 <body style="" class="m-2 p-2 bg-light shadow" >
   
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Menú</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-      <a class="nav-link" aria-current="page" href="main.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link active fw-bolder" href="svc.html">Consultas S.V.C</a></li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Registros de formularios</a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <li><a class="dropdown-item" href="enlaces_formularios.html">¡Enlaces a formularios!</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">De contacto con escuelas</a></li>
-        <li><a class="dropdown-item" href="#">De capacitaciones</a></li>
-        <li><a class="dropdown-item" href="#">De consultas a gestión</a></li>
-        <li><a class="dropdown-item" href="#">De reuniones con otros actores</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">¡Alertas registradas!</a></li></ul>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Info. de territorio</a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <li><a class="dropdown-item" href="info_territorio.html">Info. general de territorio</a></li>
-        <li>
-          <a class="dropdown-item" href="info_centros.html">Info. general de centros</a>
-        </li>        
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Altas y bajas en S.V.C</a></li>
-        <li><a class="dropdown-item" href="#">DR's reportados</a></li>
-        <li><a class="dropdown-item" href="#">Grupos de riesgo</a></li>
-        <li><a class="dropdown-item" href="#">Grupos con problemas de eq.</a></li></ul>
-      </li>
-      <li class="nav-item"><a class="nav-link" href="enlaces.html">Enlaces útiles</a></li>
-      <li class="nav-item"><a class="nav-link" href="index.html" id="sSys">SALIR</a></li>
-    </div>
-  </div>
-  </nav>
+  <div id="menuNavegacion"></div>
   
   <div class="container"> <div class="row"> <div class="col-12">
   <div class="dropdown m-2">
@@ -80,7 +41,7 @@
   </div>
   <div class="input-group flex-nowrap">
     <input class="form-control m-1" id="valorfil" type="text" placeholder="RUEE (NNNNCCC)">
-    <a class="btn btn-outline-secondary m-1" id="buscarCentrosAsociados" role="button" disabled>Buscar</a>
+    <a class="btn btn-outline-secondary m-1 disabled" id="buscarCentrosAsociados" role="button">Buscar</a>
   </div> </div> </div>
   <div class="row"> <div class="col-12 m-1"> <div id="error"> </div> </div> </div>
   <div class="row"> <div class="col-12 m-1"> <div id="resultados_c"> </div> </div> </div>
