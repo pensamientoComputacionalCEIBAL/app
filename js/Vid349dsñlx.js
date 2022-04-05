@@ -1,1 +1,925 @@
-const _0x80912=_0x230f;(function(_0x4220e9,_0x494963){const _0x20e86e=_0x230f,_0x1a33c1=_0x4220e9();while(!![]){try{const _0xc5fca4=-parseInt(_0x20e86e(0x220))/0x1+-parseInt(_0x20e86e(0x2a2))/0x2+-parseInt(_0x20e86e(0x24e))/0x3*(parseInt(_0x20e86e(0x241))/0x4)+parseInt(_0x20e86e(0x1ff))/0x5+-parseInt(_0x20e86e(0x1c2))/0x6+parseInt(_0x20e86e(0x289))/0x7*(parseInt(_0x20e86e(0x222))/0x8)+-parseInt(_0x20e86e(0x1b0))/0x9*(-parseInt(_0x20e86e(0x1b5))/0xa);if(_0xc5fca4===_0x494963)break;else _0x1a33c1['push'](_0x1a33c1['shift']());}catch(_0x22282b){_0x1a33c1['push'](_0x1a33c1['shift']());}}}(_0x5808,0x683b2));const api=new XMLHttpRequest();let urlCompleta,datosRecibidos,validadorConsulta,user=null,pass=null;const fechaActual=new Date(),diasSemana=[_0x80912(0x1a9),'lunes','martes','miércoles',_0x80912(0x21e),_0x80912(0x22c),_0x80912(0x269)];let gruposCentro=[],centroSel=[];function _0x5808(){const _0x7d2373=['<a\x20class=\x22nav-link\x20active\x20fw-bolder\x22\x20href=\x22svc.html\x22>Consultas\x20S.V.C</a></li>','Registro\x20de\x20SW\x20exitoso','hide','),\x20','RUEE\x20(NNNNCCC)','<center><div\x20class=\x27alert\x20alert-danger\x27role=\x27alert\x27>\x20¡UPS!\x20¡No\x20has\x20completado\x20todos\x20los\x20campos!</div></center>','slice','<li><a\x20class=\x22dropdown-item\x22\x20href=\x22#\x22>De\x20contacto\x20con\x20escuelas</a></li>','info_centros','A:N','role=\x27button\x27\x20href=\x27#info\x27\x20id=\x276B\x27\x20onclick=\x27CargarInformacion2021(this)\x27>6B</a>',')\x27\x20href=\x27#resultados_g\x27\x20role=\x27button\x27>',':\x20<strong>','text','#avatar','role=\x27button\x27\x20href=\x27#info\x27\x20id=\x27Centro\x27\x20onclick=\x27CargarDatosCentro2021()\x27>Centro</a>','/values/','serviceWorker','send','<br><br>','getAttribute','A:AJ','html','\x27\x20onclick=\x27cargarInfoCentro(','#eIndex','<b>Comentarios\x20del\x20centro:</b><br>','#valorfilC','Localidad\x20(Ej.Quebracho)','#user','</strong>\x20%\x20del\x20total\x20de\x20centros)</a>','info_centros.html','<a\x20class=\x22nav-link\x22\x20aria-current=\x22page\x22\x20href=\x22main.html\x22>Home</a></li>','<li\x20class=\x22nav-item\x22><a\x20class=\x22nav-link\x22\x20href=\x22index.html\x22\x20id=\x22sSys\x22>SALIR</a></li>','#fecha','</strong><br>','¡Sin\x20mentor\x20Ceilab!','Departamento:\x20','<li><a\x20class=\x22dropdown-item\x22\x20href=\x22info_territorio.html\x22>Info.\x20general\x20de\x20territorio</a></li>','attr','<a\x20class=\x27btn\x20btn-outline-primary\x20text-start\x20m-2\x27','#info','click','Coordinado\x20para\x20los\x20días:\x20','<li><a\x20class=\x22dropdown-item\x22\x20href=\x22#\x22>De\x20capacitaciones</a></li>','Doc.\x20DR\x20(Ej.\x20rt58936592)','#resultados_c','nombre','fceilabC','#grupos','-\x20Email/s\x20Director/a:\x20','Main_documentos','<b>Fecha\x20de\x20registro\x20del\x20reporte:</b>\x20','#valorfil','href','#valorIng','3288810nUzjka','writeText','<b>Información\x20del\x20centro:\x20</b>','frueeC','Main','-\x20Motivación:\x20','<a\x20class=\x22nav-link\x20dropdown-toggle\x22\x20href=\x22#\x22\x20id=\x22navbarDropdown\x22\x20role=\x22button\x22\x20data-bs-toggle=\x22dropdown\x22\x20aria-expanded=\x22false\x22>Info.\x20de\x20territorio</a>','#pass','focus','#resultados_i','length','index.html','#nombreDoc','open','#fredglobalC','urlImagen','#sSys','\x27\x20onclick=\x27cargarGrupos(','<li\x20class=\x22nav-item\x22>','<li><a\x20class=\x22dropdown-item\x22\x20href=\x22#\x22>De\x20reuniones\x20con\x20otros\x20actores</a></li>','fruee','<li><a\x20\x20target=\x22_blank\x22\x20class=\x22dropdown-item\x22\x20href=\x22https://docs.google.com/spreadsheets/d/1A1IOeV9LdKIYS0eGyGmPzeMK1a-b_mXOSWWME2MtbXQ/edit?usp=sharing\x22>¡Alertas\x20registradas!</a></li></ul>','Doc.\x20DA\x20(Ej.\x2047259101)','1wJAU-PQ0Ydvr_Vi2n7ricKATk8S5HCkSqJyYazteCLo','#infoTerritorio','fdepartamentoC','#flocalidad','push','Fecha\x20de\x20registro\x20del\x20reporte:\x20','toString','enlaces_formularios.html','jueves','role=\x27button\x27\x20href=\x27#info\x27\x20id=\x274D\x27\x20onclick=\x27CargarInformacion2021(this)\x27>4D</a>','775SAqgYS','Fecha\x20de\x20creación\x20del\x20reporte:\x20','24lnvjfL','<a\x20class=\x27btn\x20btn-outline-secondary\x20m-2\x27\x20id=\x27','#resultados_g','null','#mensajeGestion','responseText','<b>Disponibilidad\x20de\x20máquinas:</b>\x20','role=\x27button\x27\x20href=\x27#info\x27\x20id=\x275A\x27\x20onclick=\x27CargarInformacion2021(this)\x27>5A</a>','<li><hr\x20class=\x22dropdown-divider\x22></li>','getDay','viernes','<br>Correo\x20electrónico\x20(DR):\x20','#buscarReportes2021','#fceilabC','correo:\x20',')\x27\x20href=\x27#resultados_i\x27\x20role=\x27button\x27>','role=\x27button\x27\x20href=\x27#info\x27\x20id=\x27Multi.\x27\x20onclick=\x27CargarInformacion2021(this)\x27>Multi.</a>','info_territorio.html','</a><br>','which','forEach','<a\x20class=\x27btn\x20btn-outline-success\x20text-start\x20m-2\x27','</strong><hr>','<strong>¡Atención!</strong>\x20Última\x20actualización\x20del\x20sistema\x20','A:D','<li><a\x20class=\x22dropdown-item\x22\x20href=\x22contacto_escuelas2021.html\x22>Contacto\x20con\x20escuelas\x202021</a></li>','</a>','<br><br><b>Dimensión\x20“Docente\x20de\x20aula”</b><br>','includes','<li><a\x20class=\x22dropdown-item\x20active\x20fw-bolder\x22\x20href=\x22info_territorio.html\x22>Info.\x20general\x20de\x20territorio</a></li>','values','172pRulnu','#rIndex',',\x20tiene\x20<strong>','<a\x20class=\x27btn\x20btn-outline-secondary\x20m-2\x27\x20href=\x27','<center><div\x20class=\x27alert\x20alert-danger\x27role=\x27alert\x27>\x20¡UPS!\x20¡Parece\x20que\x20hay\x20un\x20problema\x20de\x20conexión!</div></center>','log','fredglobalC','<span\x20class=\x22navbar-toggler-icon\x22></span></button>','<b>Centro:</b>\x20','val','-\x20Proactividad:\x20','-\x20Vínculo\x20con\x20estudiantes:\x20','<li><a\x20target=\x22_blank\x22\x20class=\x22dropdown-item\x22\x20href=\x22https://docs.google.com/spreadsheets/d/1Bx1dekcH-2axCetamcxOe9OZIZ_kOuAiYHFWen34CiU/edit?usp=sharing\x22>Grupos\x20de\x20riesgo</a></li>','57231HgIgqT','AIzaSyAVvMA2r0J3skLgWq2g0JX6facQN9BXsXM','Centro:\x20','</ul></li>','indexOf','#fdocumentoda','then','<b>Grupos\x20reportados:</b>\x20','SVC','<br><br><b>Dimensión\x20“Docente\x20remoto”</b><br>','<center><div\x20class=\x27alert\x20alert-danger\x20m-2\x27role=\x27alert\x27>\x20¡UPS!\x20¡No\x20hay\x20resultados\x20para\x20la\x20consulta!</div></center>','#fdocumentodr','1XS1ngb5eknIeXnfPsSHe5Hnk7XY5LcqQ1oD1DDjPHk0','<a\x20class=\x27btn\x20btn-outline-success\x20m-1\x27\x20role=\x27button\x27\x20onclick=\x27copiarA(this)\x27>','<li\x20class=\x22nav-item\x20dropdown\x22>','<br>\x20Grupo\x20','#buscarCentrosAsociadosC','¡Sin\x20mentor\x20RED!','onreadystatechange','info_territorio','Multi.','#buscarDocumentos','<a\x20class=\x22nav-link\x20active\x20fw-bolder\x22\x20aria-current=\x22page\x22\x20href=\x22main.html\x22>Home</a></li>','role=\x27button\x27\x20href=\x27#info\x27\x20id=\x276D\x27\x20onclick=\x27CargarInformacion2021(this)\x27>6D</a>','-\x20Desempeño:\x20',')<br>','<li><a\x20target=\x22_blank\x22\x20class=\x22dropdown-item\x22\x20href=\x22https://docs.google.com/spreadsheets/d/1DPZOuHqn4SJ2bc3aKy2yWd_CdXrJJIBMvYqOR72bmM4/edit?usp=sharing\x22>DRs\x20reportados</a></li>','sábado','ready','keypress','<br>Correo\x20electrónico\x20(DA):\x20','RUEE\x20centro\x20Red\x20Global\x20(NNNNCCC)','\x27\x20target=\x27_blank\x27\x20role=\x27button\x27>','md5','Procesando...','<li><a\x20class=\x22dropdown-item\x20active\x20fw-bolder\x22\x20href=\x22info_centros.html\x22>Info.\x20general\x20de\x20centros</a></li>','Buscar','setItem','status','</li>','flocalidad','<b>Apoyo\x20del\x20equipo\x20de\x20dirección:</b>\x20','-\x20Intereses\x20en\x20formación\x20PC:\x20','</ul></div></div></nav>','role=\x27button\x27\x20id=\x27Centro\x27\x20onclick=\x27copiarA(this)\x27>','A:GH','A\x20la\x20hora:\x20','-\x20Compromiso:\x20','1uu4nCUKc5ArODeIv5NOOfMgR3Qd-YhYckGcGLlXv_ik','<br>-\x20Teléfonos\x20(centro):\x20','enlaces.html','_self','contacto_escuelas2021','disabled','getItem','Tipo\x20de\x20contacto:\x20','desde\x20S.V.C:\x20<strong>','ghost','sort','47411poAdLb','<b>Disponibilidad\x20de\x20placas\x20Micro:Bit:</b>\x20','#menuNavegacion','</strong>\x20grupos\x20distribuidos\x20en\x20<strong>','#fdepartamento','</a><a\x20class=\x27btn\x20btn-outline-primary\x20text-start\x20m-2\x27','<button\x20class=\x22navbar-toggler\x22\x20type=\x22button\x22\x20data-bs-toggle=\x22collapse\x22\x20data-bs-target=\x22#navbarSupportedContent\x22\x20aria-controls=\x22navbarSupportedContent\x22\x20aria-expanded=\x22false\x22\x20aria-label=\x22Toggle\x20navigation\x22>','</strong>\x20centros\x20(','<div\x20class=\x22container-fluid\x22>','<a\x20class=\x27btn\x20btn-outline-success\x20m-2\x27\x20id=\x27','warn','</strong>\x20del\x20<strong>','fdepartamento','<br>Contacto\x20tel.\x20/\x20celular:\x20','#fruee','role=\x27button\x27\x20href=\x27#info\x27\x20id=\x274C\x27\x20onclick=\x27CargarInformacion2021(this)\x27>4C</a>','-\x20Email/s\x20(centro):\x20','input[type=\x27text\x27]','<b>Clima\x20general\x20de\x20trabajo:</b>\x20','<a\x20class=\x22nav-link\x22\x20href=\x22svc.html\x22>Consultas\x20S.V.C</a></li>','fadeIn','#error','<br>-\x20Teléfonos\x20Director/a:\x20','&key=','<i>Hoy\x20es\x20<strong>','531196KTxgSk','Objetivo\x20principal\x20del\x20contacto:\x20','Index','keyCode','Departamento\x20(Ej.\x20Rocha)','#resultados','<li><a\x20class=\x22dropdown-item\x20active\x20fw-bolder\x22\x20href=\x22contacto_escuelas2021.html\x22>Contacto\x20con\x20escuelas\x202021</a></li>','fdocumentoda','<b>Comentarios:</b><br>','RUEE\x20centro\x20Ceilab\x20(NNNNCCC)','removeClass','<b>Información\x20de\x20clases\x20de\x20Pensamiento\x20Computacional</b><br>','!</p>','placeholder','main.html','1-8KpueE6kIuE6fsFPdy06Ui4AhLqf2EiPcbbPVzudcE','<nav\x20class=\x22navbar\x20navbar-expand-lg\x20navbar-light\x20bg-light\x22>','autocomplete','role=\x27button\x27\x20href=\x27#info\x27\x20id=\x27Alerta\x27\x20onclick=\x27CargarAlerta2021()\x27>¡Alerta\x20reportada!</a>','Error\x20al\x20tratar\x20de\x20registrar\x20el\x20SW','domingo','-\x20Apropiación\x20de\x20las\x20propuestas\x20pedagógicas:\x20','addClass','role=\x27button\x27\x20onclick=\x27copiarA(this)\x27>','<div\x20class=\x22collapse\x20navbar-collapse\x22\x20id=\x22navbarSupportedContent\x22>','<br>-\x20Proyectos\x20de\x20abordaje\x20en\x20curso:\x20','<li\x20class=\x22nav-item\x22><a\x20class=\x22nav-link\x22\x20href=\x22enlaces.html\x22>Enlaces\x20útiles</a></li>','9PLlmdW','<a\x20class=\x22navbar-brand\x22\x20href=\x22#\x22>Menú</a>','<br><br><b>Desempeño\x20del\x20grupo</b><br>','<ul\x20class=\x22dropdown-menu\x22\x20aria-labelledby=\x22navbarDropdown\x22>','\x27\x20onclick=\x27cargarInfo(this)\x27\x20','9316390BXLcNh','#buscarCentrosAsociados','12kLL0bz0mwkP3EYJRrBG2aOUgEFcrRG3iIhm3n_fuQ8','readyState','1kXcitsVB06G-hv_2d2qdBCZWKn5U3yGCNUD-dwgUvRw','#reportes','<li\x20class=\x22nav-item\x22><a\x20class=\x22nav-link\x20active\x20fw-bolder\x22\x20href=\x22enlaces.html\x22>Enlaces\x20útiles</a></li>','innerText','<br>','1kkFvGx51E2nypwDfdJqKYFgwsbFvPPAKSpzWdRw5Z-s','?access_token=','#frueeC','<br><b>Docente\x20remoto:\x20</b>','576636ldvETf','<p\x20class=\x27h3\x20text-secondary\x27>¡Bienvenid@\x20','register','<b>Referente/s:</b>\x20','¡No\x20hay\x20mensajes\x20pendientes!','GET'];_0x5808=function(){return _0x7d2373;};return _0x5808();}$(document)[_0x80912(0x26a)](function(){const _0x2c21b2=_0x80912;$(_0x2c21b2(0x1e0))[_0x2c21b2(0x1f1)](function(){validarCamposIndex();}),$(_0x2c21b2(0x242))['click'](function(){reiniciarInputsIndex();}),$(_0x2c21b2(0x263))['click'](function(){buscarDocumentos();}),$(_0x2c21b2(0x297))[_0x2c21b2(0x1f1)](function(){cargarFiltroVisual(this);}),$(_0x2c21b2(0x219))['click'](function(){cargarFiltroVisual(this);}),$(_0x2c21b2(0x28d))[_0x2c21b2(0x1f1)](function(){cargarFiltroVisual(this);}),$(_0x2c21b2(0x253))[_0x2c21b2(0x1f1)](function(){cargarFiltroVisual(this);}),$(_0x2c21b2(0x259))['click'](function(){cargarFiltroVisual(this);}),$(_0x2c21b2(0x1b6))['click'](function(){buscarCentrosAsociados();}),$(_0x2c21b2(0x1c0))[_0x2c21b2(0x1f1)](function(){cargarFiltroVisualCentros(this);}),$('#fdepartamentoC')[_0x2c21b2(0x1f1)](function(){cargarFiltroVisualCentros(this);}),$(_0x2c21b2(0x20d))[_0x2c21b2(0x1f1)](function(){cargarFiltroVisualCentros(this);}),$(_0x2c21b2(0x22f))[_0x2c21b2(0x1f1)](function(){cargarFiltroVisualCentros(this);}),$(_0x2c21b2(0x25e))[_0x2c21b2(0x1f1)](function(){buscarCentrosAsociadosC();}),$(_0x2c21b2(0x22e))[_0x2c21b2(0x1f1)](function(){buscarReportes2021();}),$(_0x2c21b2(0x1e4))[_0x2c21b2(0x26b)](function(_0x5261ca){const _0x58e9cd=_0x2c21b2;var _0x5ae53e=_0x5261ca[_0x58e9cd(0x2a5)]?_0x5261ca[_0x58e9cd(0x2a5)]:_0x5261ca[_0x58e9cd(0x235)];if(_0x5ae53e==0xd)return validarCamposIndex(),![];}),$(_0x2c21b2(0x206))[_0x2c21b2(0x26b)](function(_0x1a938a){const _0x5c5590=_0x2c21b2;var _0x5f3350=_0x1a938a['keyCode']?_0x1a938a[_0x5c5590(0x2a5)]:_0x1a938a[_0x5c5590(0x235)];if(_0x5f3350==0xd)return validarCamposIndex(),![];}),$('#nombreDoc')[_0x2c21b2(0x26b)](function(_0x584110){const _0x55c06c=_0x2c21b2;var _0xa99d9d=_0x584110[_0x55c06c(0x2a5)]?_0x584110[_0x55c06c(0x2a5)]:_0x584110[_0x55c06c(0x235)];if(_0xa99d9d==0xd)return buscarDocumentos(),![];}),$(_0x2c21b2(0x1fc))[_0x2c21b2(0x26b)](function(_0x244757){const _0x3fd593=_0x2c21b2;var _0x11d32a=_0x244757[_0x3fd593(0x2a5)]?_0x244757[_0x3fd593(0x2a5)]:_0x244757[_0x3fd593(0x235)];if(_0x11d32a==0xd)return buscarCentrosAsociados(),$(_0x3fd593(0x1fc))[_0x3fd593(0x207)](),![];}),$(_0x2c21b2(0x1e2))[_0x2c21b2(0x26b)](function(_0x56c098){const _0x3ae2e7=_0x2c21b2;var _0xcc82e2=_0x56c098[_0x3ae2e7(0x2a5)]?_0x56c098[_0x3ae2e7(0x2a5)]:_0x56c098[_0x3ae2e7(0x235)];if(_0xcc82e2==0xd)return buscarCentrosAsociadosC(),$(_0x3ae2e7(0x1e2))[_0x3ae2e7(0x207)](),![];}),$(_0x2c21b2(0x1fe))['keypress'](function(_0x5f0fe7){const _0x384701=_0x2c21b2;var _0x42ba48=_0x5f0fe7[_0x384701(0x2a5)]?_0x5f0fe7[_0x384701(0x2a5)]:_0x5f0fe7[_0x384701(0x235)];if(_0x42ba48==0xd)return buscarReportes2021(),$(_0x384701(0x1fe))['focus'](),![];}),$(_0x2c21b2(0x20f))[_0x2c21b2(0x1f1)](function(){salirSistema();}),cargarPagina();});let m1_Index=_0x80912(0x1cd),m2_Index=_0x80912(0x245),m3_Index='<center><div\x20class=\x27alert\x20alert-danger\x27role=\x27alert\x27>\x20¡UPS!\x20¡Nombre\x20de\x20usuario\x20y/o\x20contraseña\x20incorrecto/s!</div></center>',m1_Main=_0x80912(0x1c3)+sessionStorage[_0x80912(0x284)]('nombre')+_0x80912(0x1a1),m2_Main=_0x80912(0x2a1)+diasSemana[fechaActual[_0x80912(0x22b)]()]+_0x80912(0x294)+fechaActual['toLocaleDateString']()+'</strong>.</i>',m3_Main=_0x80912(0x1c6),m1_SVC=_0x80912(0x258);function cargarPagina(){const _0x351dcb=_0x80912;let _0x488052=jQuery(location)[_0x351dcb(0x1ee)](_0x351dcb(0x1fd)),_0x58a8a2=_0x488052[_0x351dcb(0x1ce)](_0x488052['lastIndexOf']('/')+0x1,_0x488052['length']);_0x58a8a2[_0x351dcb(0x252)]('#')!=-0x1&&(_0x58a8a2=_0x58a8a2['slice'](0x0,_0x58a8a2[_0x351dcb(0x252)]('#')));_0x58a8a2!=_0x351dcb(0x20a)&&validarSession();menuNavegacion(_0x58a8a2);switch(_0x58a8a2){case _0x351dcb(0x20a):registrarSW(),$(_0x351dcb(0x29a))[_0x351dcb(0x207)]();break;case _0x351dcb(0x1a3):$('#usuario')[_0x351dcb(0x1de)](m1_Main),$(_0x351dcb(0x1d6))[_0x351dcb(0x1ee)]('src',sessionStorage[_0x351dcb(0x284)]('urlImagen')),$(_0x351dcb(0x1e9))['html'](m2_Main),$('input[type=\x27text\x27]')[_0x351dcb(0x207)](),getDatos(_0x351dcb(0x203));break;case'svc.html':getDatos('SVC'),$(_0x351dcb(0x1fc))['focus']();break;case _0x351dcb(0x233):getDatos(_0x351dcb(0x261));break;case _0x351dcb(0x1e6):getDatos('info_centros');break;case'contacto_escuelas2021.html':getDatos(_0x351dcb(0x282)),$(_0x351dcb(0x1fe))[_0x351dcb(0x207)]();break;}}function validarSession(){const _0x542e93=_0x80912;(sessionStorage['getItem'](_0x542e93(0x1f6))==null||sessionStorage[_0x542e93(0x284)](_0x542e93(0x1f6))==_0x542e93(0x225))&&window[_0x542e93(0x20c)]('index.html',_0x542e93(0x281));}function registrarSW(){const _0x3d89b3=_0x80912;_0x3d89b3(0x1d9)in navigator&&navigator[_0x3d89b3(0x1d9)][_0x3d89b3(0x1c4)]('./94kfd34dsla.js')[_0x3d89b3(0x254)](_0xa95d41=>console[_0x3d89b3(0x246)](_0x3d89b3(0x1c9),_0xa95d41))['catch'](_0x235020=>console[_0x3d89b3(0x293)](_0x3d89b3(0x1a8),_0x235020));}function errorSys(_0x1d47f5,_0x5246ff){const _0xbea78f=_0x80912;$(_0x1d47f5)[_0xbea78f(0x1ca)](),$(_0x1d47f5)[_0xbea78f(0x1de)](_0x5246ff),$(_0x1d47f5)[_0xbea78f(0x29d)]();}function copiarA(_0x3c2d8e){const _0x359c6f=_0x80912;navigator['clipboard'][_0x359c6f(0x200)](_0x3c2d8e[_0x359c6f(0x1bc)]);}function salirSistema(){const _0x79b70f=_0x80912;sessionStorage[_0x79b70f(0x273)](_0x79b70f(0x1f6),null),sessionStorage[_0x79b70f(0x273)](_0x79b70f(0x20e),null);}function _0x230f(_0x395888,_0x3c5c41){const _0x5808e2=_0x5808();return _0x230f=function(_0x230f1b,_0x404475){_0x230f1b=_0x230f1b-0x1a0;let _0x3c4503=_0x5808e2[_0x230f1b];return _0x3c4503;},_0x230f(_0x395888,_0x3c5c41);}function getDatos(_0x23bff1){const _0x19adbd=_0x80912;let _0x44ac1c=_0x19adbd(0x24f),_0x27c8bf=null,_0x3d0b68=null;switch(_0x23bff1){case _0x19adbd(0x2a4):hashwasm[_0x19adbd(0x26f)]($(_0x19adbd(0x1e4))[_0x19adbd(0x24a)]())[_0x19adbd(0x254)](function(_0x2c7c9c){user=_0x2c7c9c;}),hashwasm[_0x19adbd(0x26f)]($(_0x19adbd(0x206))[_0x19adbd(0x24a)]())['then'](function(_0x4364ae){pass=_0x4364ae;}),_0x27c8bf=_0x19adbd(0x27e),_0x3d0b68=_0x19adbd(0x23a);break;case _0x19adbd(0x203):_0x27c8bf=_0x19adbd(0x1b9),_0x3d0b68='A:A';break;case _0x19adbd(0x1fa):_0x27c8bf=_0x19adbd(0x216),_0x3d0b68='A:B',$('#buscarDocumentos')['addClass'](_0x19adbd(0x283)),$(_0x19adbd(0x263))['text'](_0x19adbd(0x270));break;case _0x19adbd(0x256):_0x27c8bf=_0x19adbd(0x1b7),_0x3d0b68=_0x19adbd(0x1dd),$(_0x19adbd(0x1b6))[_0x19adbd(0x1ab)](_0x19adbd(0x283)),$('#buscarCentrosAsociados')[_0x19adbd(0x1d5)](_0x19adbd(0x270));break;case _0x19adbd(0x261):_0x27c8bf=_0x19adbd(0x25a),_0x3d0b68='A:G';break;case'info_centros':_0x27c8bf=_0x19adbd(0x1a4),_0x3d0b68=_0x19adbd(0x1d1),$(_0x19adbd(0x25e))['addClass']('disabled'),$(_0x19adbd(0x25e))[_0x19adbd(0x1d5)]('Procesando...');break;case _0x19adbd(0x282):_0x27c8bf=_0x19adbd(0x1be),_0x3d0b68=_0x19adbd(0x27b),$(_0x19adbd(0x22e))[_0x19adbd(0x1ab)](_0x19adbd(0x283)),$(_0x19adbd(0x22e))['text']('Procesando...');break;}urlCompleta='https://content-sheets.googleapis.com/v4/spreadsheets/'+_0x27c8bf+_0x19adbd(0x1d8)+_0x3d0b68+_0x19adbd(0x1bf)+_0x44ac1c+_0x19adbd(0x2a0)+_0x44ac1c,api['open'](_0x19adbd(0x1c7),urlCompleta,!![]),api[_0x19adbd(0x1da)](),api[_0x19adbd(0x260)]=function(){const _0x2bce3b=_0x19adbd;if(this[_0x2bce3b(0x274)]==0xc8&&this[_0x2bce3b(0x1b8)]==0x4){datosRecibidos=JSON['parse'](this[_0x2bce3b(0x227)]);switch(_0x23bff1){case _0x2bce3b(0x2a4):loginIndex(datosRecibidos);break;case'Main':cargarMensaje(datosRecibidos);break;case _0x2bce3b(0x1fa):$(_0x2bce3b(0x263))['text'](_0x2bce3b(0x272)),$('#buscarDocumentos')[_0x2bce3b(0x2ac)]('disabled'),cargarInputsDocumentos(datosRecibidos);break;case _0x2bce3b(0x256):$(_0x2bce3b(0x1b6))['text'](_0x2bce3b(0x272)),$(_0x2bce3b(0x1b6))['removeClass'](_0x2bce3b(0x283)),cargarInputs(datosRecibidos);break;case'info_territorio':cargarInfoTerritorio(datosRecibidos);break;case _0x2bce3b(0x1d0):$(_0x2bce3b(0x25e))[_0x2bce3b(0x1d5)](_0x2bce3b(0x272)),$(_0x2bce3b(0x25e))[_0x2bce3b(0x2ac)]('disabled'),cargarInputsC(datosRecibidos);break;case'contacto_escuelas2021':$(_0x2bce3b(0x22e))[_0x2bce3b(0x1d5)](_0x2bce3b(0x272)),$(_0x2bce3b(0x22e))['removeClass'](_0x2bce3b(0x283)),cargarInputs2021(datosRecibidos);break;}}};}function validarDatosRecibidos(_0x51b371){const _0x527af0=_0x80912;return _0x51b371==undefined||_0x51b371[_0x527af0(0x240)][_0x527af0(0x209)]<=0x1?(errorSys(_0x527af0(0x29e),m2_Index),!![]):![];}function menuNavegacion(_0x139208){const _0x3ab29d=_0x80912;let _0x477223='';_0x477223+=_0x3ab29d(0x1a5),_0x477223+=_0x3ab29d(0x291),_0x477223+=_0x3ab29d(0x1b1),_0x477223+=_0x3ab29d(0x28f),_0x477223+=_0x3ab29d(0x248),_0x477223+=_0x3ab29d(0x1ad),_0x477223+='<ul\x20class=\x22navbar-nav\x20me-auto\x20mb-2\x20mb-lg-0\x22>',_0x477223+=_0x3ab29d(0x211),_0x139208==_0x3ab29d(0x1a3)?_0x477223+=_0x3ab29d(0x264):_0x477223+=_0x3ab29d(0x1e7),_0x477223+='<li\x20class=\x22nav-item\x22>',_0x139208=='svc.html'?_0x477223+=_0x3ab29d(0x1c8):_0x477223+=_0x3ab29d(0x29c),_0x477223+=_0x3ab29d(0x25c),_0x477223+='<a\x20class=\x22nav-link\x20dropdown-toggle\x22\x20href=\x22#\x22\x20id=\x22navbarDropdown\x22\x20role=\x22button\x22\x20data-bs-toggle=\x22dropdown\x22\x20aria-expanded=\x22false\x22>Registros\x20de\x20formularios</a>',_0x477223+=_0x3ab29d(0x1b3),_0x139208==_0x3ab29d(0x21d)?_0x477223+='<li><a\x20class=\x22dropdown-item\x20active\x20fw-bolder\x22\x20href=\x22enlaces_formularios.html\x22>¡Enlaces\x20a\x20formularios!</a></li>':_0x477223+='<li><a\x20class=\x22dropdown-item\x22\x20href=\x22enlaces_formularios.html\x22>¡Enlaces\x20a\x20formularios!</a></li>',_0x477223+='<li><hr\x20class=\x22dropdown-divider\x22></li>',_0x477223+=_0x3ab29d(0x1cf),_0x477223+=_0x3ab29d(0x1f3),_0x477223+=_0x3ab29d(0x212),_0x477223+=_0x3ab29d(0x22a),_0x477223+=_0x3ab29d(0x214),_0x477223+=_0x3ab29d(0x275),_0x477223+=_0x3ab29d(0x25c),_0x477223+=_0x3ab29d(0x205),_0x477223+=_0x3ab29d(0x1b3),_0x139208==_0x3ab29d(0x233)?_0x477223+=_0x3ab29d(0x23f):_0x477223+=_0x3ab29d(0x1ed),_0x139208==_0x3ab29d(0x1e6)?_0x477223+=_0x3ab29d(0x271):_0x477223+='<li><a\x20class=\x22dropdown-item\x22\x20href=\x22info_centros.html\x22>Info.\x20general\x20de\x20centros</a></li>',_0x477223+=_0x3ab29d(0x22a),_0x477223+='<li><a\x20target=\x22_blank\x22\x20class=\x22dropdown-item\x22\x20href=\x22https://docs.google.com/spreadsheets/d/1AjYu5mRAOTnpxnQhxM4s-8wwwMHTS78R0rgjUT2-Lgc/edit?usp=sharing\x22>Altas\x20y\x20bajas\x20en\x20S.V.C</a></li>',_0x477223+=_0x3ab29d(0x268),_0x477223+=_0x3ab29d(0x24d),_0x477223+='<li><a\x20target=\x22_blank\x22\x20class=\x22dropdown-item\x22\x20href=\x22https://docs.google.com/spreadsheets/d/1XgveyUJvLRR0xi_NgzBUV_wvlHzLs0W5jQrU4dpbE6o/edit?usp=sharing\x22>Grupos\x20de\x20riesgo\x20-\x20en\x20detalle</a></li>',_0x477223+='<li><a\x20target=\x22_blank\x22\x20class=\x22dropdown-item\x22\x20href=\x22https://docs.google.com/spreadsheets/d/1THlBOLMELrpWmE1Ii4zw8cIqy8c66xWTU4jprHgL_xQ/edit?usp=sharing\x22>Grupos\x20con\x20problemas\x20de\x20eq.</a></li>',_0x477223+=_0x3ab29d(0x22a),_0x139208=='contacto_escuelas2021.html'?_0x477223+=_0x3ab29d(0x2a8):_0x477223+=_0x3ab29d(0x23b),_0x477223+=_0x3ab29d(0x251),_0x139208==_0x3ab29d(0x280)?_0x477223+=_0x3ab29d(0x1bb):_0x477223+=_0x3ab29d(0x1af),_0x477223+=_0x3ab29d(0x1e8),_0x477223+=_0x3ab29d(0x279),$(_0x3ab29d(0x28b))[_0x3ab29d(0x1de)](_0x477223);}function loginIndex(_0x245641){const _0x44d2f1=_0x80912;if(_0x245641==undefined||_0x245641[_0x44d2f1(0x240)][_0x44d2f1(0x209)]<=0x1)errorSys('#error',m2_Index),$(_0x44d2f1(0x1e4))[_0x44d2f1(0x207)]();else{let _0x2549c2=_0x245641[_0x44d2f1(0x240)][_0x44d2f1(0x209)]-0x1;while(_0x2549c2>=0x0){if(_0x245641[_0x44d2f1(0x240)][_0x2549c2][0x0]==user&&_0x245641[_0x44d2f1(0x240)][_0x2549c2][0x1]==pass){sessionStorage[_0x44d2f1(0x273)](_0x44d2f1(0x1f6),_0x245641[_0x44d2f1(0x240)][_0x2549c2][0x2]),sessionStorage[_0x44d2f1(0x273)](_0x44d2f1(0x20e),_0x245641[_0x44d2f1(0x240)][_0x2549c2][0x3]),window['open'](_0x44d2f1(0x1a3),'_self');return;}_0x2549c2--;}errorSys(_0x44d2f1(0x29e),m3_Index);}}function validarCamposIndex(){const _0x1da08e=_0x80912;$(_0x1da08e(0x1e4))[_0x1da08e(0x24a)]()!=''&&$(_0x1da08e(0x206))['val']()!=''?getDatos('Index'):(errorSys(_0x1da08e(0x29e),m1_Index),$(_0x1da08e(0x1e4))['focus']());}function reiniciarInputsIndex(){const _0x27db6f=_0x80912;$(_0x27db6f(0x29e))['html'](''),$('input')['val'](''),$(_0x27db6f(0x1e4))[_0x27db6f(0x207)]();}function cargarMensaje(_0x59c9ef){const _0x5b4c83=_0x80912;_0x59c9ef==undefined||_0x59c9ef[_0x5b4c83(0x240)][_0x5b4c83(0x209)]<=0x1?errorSys(_0x5b4c83(0x226),m3_Main):($(_0x5b4c83(0x226))['html']('<div\x20class=\x27h6\x27>'+_0x59c9ef['values'][0x1][0x0])+'</div>',getDatos('Main_documentos'));}function cargarInputsDocumentos(_0x2daab3){const _0x468224=_0x80912;let _0x13ac92=[];if(validarDatosRecibidos(_0x2daab3))$(_0x468224(0x20b))['focus']();else{let _0x5655a7=_0x2daab3[_0x468224(0x240)][_0x468224(0x209)]-0x1;while(_0x5655a7>0x0){_0x13ac92[_0x468224(0x252)](_0x2daab3[_0x468224(0x240)][_0x5655a7][0x0])==-0x1&&_0x13ac92[_0x468224(0x21a)](_0x2daab3[_0x468224(0x240)][_0x5655a7][0x0]),_0x5655a7--;}}_0x13ac92['sort'](),$(_0x468224(0x20b))[_0x468224(0x1a6)]({'source':_0x13ac92});}function buscarDocumentos(){const _0x225d32=_0x80912;$(_0x225d32(0x29e))['html'](''),$(_0x225d32(0x2a7))[_0x225d32(0x1de)]('');if(validarValor_nombreDoc()){let _0x25a4f6='';if(!validarDatosRecibidos(datosRecibidos)){let _0x3cb67c=datosRecibidos[_0x225d32(0x240)][_0x225d32(0x209)]-0x1;while(_0x3cb67c>0x0){datosRecibidos['values'][_0x3cb67c][0x0][_0x225d32(0x23e)]($(_0x225d32(0x20b))[_0x225d32(0x24a)]())&&(_0x25a4f6=_0x25a4f6+_0x225d32(0x244)+datosRecibidos[_0x225d32(0x240)][_0x3cb67c][0x1]+_0x225d32(0x26e)+datosRecibidos[_0x225d32(0x240)][_0x3cb67c][0x0]+_0x225d32(0x23c)),_0x3cb67c--;}}_0x25a4f6!=''?$(_0x225d32(0x2a7))[_0x225d32(0x1de)](_0x25a4f6):errorSys(_0x225d32(0x29e),m1_SVC);}else errorSys(_0x225d32(0x29e),m1_SVC);$('#nombreDoc')['focus']();}function validarValor_nombreDoc(){const _0x5d3c96=_0x80912;if($(_0x5d3c96(0x20b))[_0x5d3c96(0x24a)]()!=null&&$(_0x5d3c96(0x20b))[_0x5d3c96(0x24a)]()!=undefined&&$('#nombreDoc')[_0x5d3c96(0x24a)]()!='')return!![];return![];}function cargarFiltroVisual(_0x48c7d3){const _0x5baf5a=_0x80912;switch(_0x48c7d3[_0x5baf5a(0x1dc)]('id')){case _0x5baf5a(0x213):$('#valorfil')['attr'](_0x5baf5a(0x1a2),_0x5baf5a(0x1cc));break;case _0x5baf5a(0x276):$(_0x5baf5a(0x1fc))[_0x5baf5a(0x1ee)]('placeholder',_0x5baf5a(0x1e3));break;case _0x5baf5a(0x295):$(_0x5baf5a(0x1fc))[_0x5baf5a(0x1ee)]('placeholder','Departamento\x20(Ej.\x20Rocha)');break;case _0x5baf5a(0x2a9):$(_0x5baf5a(0x1fc))[_0x5baf5a(0x1ee)](_0x5baf5a(0x1a2),_0x5baf5a(0x215));break;case'fdocumentodr':$('#valorfil')[_0x5baf5a(0x1ee)]('placeholder',_0x5baf5a(0x1f4));break;}cargarInputs(datosRecibidos),$(_0x5baf5a(0x1fc))[_0x5baf5a(0x24a)](''),$(_0x5baf5a(0x1fc))[_0x5baf5a(0x207)]();}function determinarATR(){const _0x428c2a=_0x80912;switch($(_0x428c2a(0x1fc))['attr'](_0x428c2a(0x1a2))){case _0x428c2a(0x1cc):return 0x0;case'Localidad\x20(Ej.Quebracho)':return 0x3;case _0x428c2a(0x2a6):return 0x2;case _0x428c2a(0x215):return 0xb;case _0x428c2a(0x1f4):return 0x19;return 0x0;}}function reiniciarElementosVisuales(_0xac0326){const _0x738a0f=_0x80912;$(_0x738a0f(0x29e))['html']('');switch(_0xac0326){case 0x1:$(_0x738a0f(0x1f5))[_0x738a0f(0x1de)]('');case 0x2:$('#resultados_g')[_0x738a0f(0x1de)]('');case 0x3:$('#resultados_i')[_0x738a0f(0x1de)]('');}}function cargarInputs(_0x11dcb3){const _0x17588f=_0x80912;let _0x35b1c8=[];if(validarDatosRecibidos(_0x11dcb3))$('#valorfil')['focus']();else{let _0x4f8a5a=determinarATR(),_0x39713e=_0x11dcb3[_0x17588f(0x240)][_0x17588f(0x209)]-0x1;while(_0x39713e>=0x0){(sessionStorage[_0x17588f(0x284)](_0x17588f(0x1f6))==_0x11dcb3[_0x17588f(0x240)][_0x39713e][0x1a]||sessionStorage['getItem'](_0x17588f(0x1f6))=='ghost')&&(_0x35b1c8[_0x17588f(0x252)](_0x11dcb3['values'][_0x39713e][_0x4f8a5a])==-0x1&&_0x35b1c8[_0x17588f(0x21a)](_0x11dcb3[_0x17588f(0x240)][_0x39713e][_0x4f8a5a])),_0x39713e--;}}$(_0x17588f(0x1fc))[_0x17588f(0x1a6)]({'source':_0x35b1c8});}function buscarCentrosAsociados(){const _0x143bad=_0x80912;reiniciarElementosVisuales(0x1);if(validarValorFil()){if(!validarDatosRecibidos(datosRecibidos)){let _0x191706=[];gruposCentro=[];let _0x38727c=determinarATR(),_0x3b01d1=datosRecibidos['values']['length']-0x1,_0x462715=null;while(_0x3b01d1>=0x0){(sessionStorage[_0x143bad(0x284)](_0x143bad(0x1f6))==datosRecibidos[_0x143bad(0x240)][_0x3b01d1][0x1a]||sessionStorage['getItem'](_0x143bad(0x1f6))==_0x143bad(0x287))&&(datosRecibidos[_0x143bad(0x240)][_0x3b01d1][_0x38727c]['includes']($('#valorfil')[_0x143bad(0x24a)]())&&(_0x462715=_0x143bad(0x223)+datosRecibidos['values'][_0x3b01d1][0x0]+_0x143bad(0x210)+datosRecibidos[_0x143bad(0x240)][_0x3b01d1][0x0]+_0x143bad(0x1d3)+datosRecibidos['values'][_0x3b01d1][0x0]+_0x143bad(0x23c),_0x191706[_0x143bad(0x252)](_0x462715)==-0x1&&_0x191706[_0x143bad(0x21a)](_0x462715),gruposCentro['push'](datosRecibidos[_0x143bad(0x240)][_0x3b01d1]))),_0x3b01d1--;}_0x191706[_0x143bad(0x209)]>0x0?(_0x191706[_0x143bad(0x288)](),_0x191706[_0x143bad(0x236)](_0x3e8993=>$(_0x143bad(0x1f5))[_0x143bad(0x1de)]($(_0x143bad(0x1f5))['html']()+_0x3e8993))):errorSys(_0x143bad(0x29e),m1_SVC);}}else errorSys(_0x143bad(0x29e),m1_SVC);$('#valorfil')[_0x143bad(0x207)]();}function validarValorFil(){const _0x3f1e38=_0x80912;if($(_0x3f1e38(0x1fc))[_0x3f1e38(0x24a)]()!=null&&$('#valorfil')[_0x3f1e38(0x24a)]()!=undefined&&$('#valorfil')[_0x3f1e38(0x24a)]()!='')return!![];return![];}function cargarGrupos(_0x700408){const _0x4fe31a=_0x80912;reiniciarElementosVisuales(0x2),gruposCentro[_0x4fe31a(0x288)]((_0x48ce83,_0x543d7b)=>_0x48ce83[0x9]+_0x48ce83[0x8]-(_0x543d7b[0x9]+_0x543d7b[0x8])),gruposCentro['forEach'](_0x35e380=>{const _0x10beed=_0x4fe31a;let _0x48a5b5=null,_0x146803=null;_0x700408[_0x10beed(0x21c)]()==_0x35e380[0x0]&&(_0x48a5b5=_0x10beed(0x292)+_0x35e380[0x0]+_0x35e380[0x8]+_0x35e380[0x9]+_0x10beed(0x1b4)+'\x20href=\x27#resultados_i\x27\x20role=\x27button\x27>'+_0x35e380[0x8]+_0x35e380[0x9]+_0x10beed(0x23c),$(_0x10beed(0x224))['html']($('#resultados_g')[_0x10beed(0x1de)]()+_0x48a5b5));});}function cargarInfo(_0x454411){const _0x2370e1=_0x80912;reiniciarElementosVisuales(0x3),gruposCentro[_0x2370e1(0x236)](_0x167cae=>{const _0x518877=_0x2370e1;let _0x43f0e1=null;if(_0x454411['getAttribute']('id')==_0x167cae[0x0]+_0x167cae[0x8]+_0x167cae[0x9]){_0x43f0e1=_0x518877(0x1ef)+_0x518877(0x1ac)+'<b>Información\x20del\x20centro:\x20</b>'+_0x167cae[0x0]+'\x20('+'<b>ID\x20N°</b>\x20'+_0x167cae[0x1]+_0x518877(0x267)+_0x518877(0x1ec)+_0x167cae[0x2]+',\x20'+_0x167cae[0x3]+_0x518877(0x1bd)+_0x167cae[0x4]+'\x20N°\x20'+_0x167cae[0x5]+'\x20'+_0x167cae[0x22]+_0x518877(0x25d)+_0x167cae[0x8]+_0x167cae[0x9]+'\x20'+_0x167cae[0x7]+'</a>'+_0x518877(0x1ef)+_0x518877(0x1ac)+'<b>Docente\x20de\x20aula:\x20</b>'+_0x167cae[0xc]+'\x20'+_0x167cae[0xd]+'\x20('+_0x167cae[0xb]+'),\x20'+_0x518877(0x26c)+_0x167cae[0xe]+_0x518877(0x296)+_0x167cae[0xf]+'<br><b>Proveedor</b>:\x20'+_0x167cae[0x13]+_0x518877(0x1c1)+_0x167cae[0x16]+'\x20'+_0x167cae[0x17]+'\x20('+_0x167cae[0x19]+_0x518877(0x1cb)+_0x518877(0x22d)+_0x167cae[0x18]+_0x518877(0x28e)+_0x518877(0x1ac)+_0x518877(0x1a0)+_0x518877(0x1f2)+_0x167cae[0x1e]+_0x518877(0x1bd)+_0x518877(0x27c)+_0x167cae[0x1f]+_0x518877(0x1bd)+'Desde\x20la\x20fecha:\x20'+_0x167cae[0x21]+'</a>',$('#resultados_i')[_0x518877(0x1de)](_0x43f0e1);return;}});}function cargarInfoTerritorio(_0x7d4a36){const _0x3f2073=_0x80912;if(_0x7d4a36==undefined||_0x7d4a36[_0x3f2073(0x240)]['length']<=0x1)errorSys('#a',m2_Index),$(_0x3f2073(0x217))['html']('');else{$('#a')['html'](_0x3f2073(0x239)+_0x3f2073(0x286)+_0x7d4a36[_0x3f2073(0x240)][0x0][0x2]+'</strong>');let _0x23d3d2=null;_0x23d3d2='-\x20'+_0x7d4a36['values'][0x0][0x0]+_0x3f2073(0x1d4)+_0x7d4a36[_0x3f2073(0x240)][0x0][0x1]+_0x3f2073(0x1ea)+'-\x20'+_0x7d4a36[_0x3f2073(0x240)][0x1][0x0]+_0x3f2073(0x1d4)+_0x7d4a36[_0x3f2073(0x240)][0x1][0x1]+_0x3f2073(0x238);let _0x5cf5c7=0x2;while(_0x5cf5c7<_0x7d4a36[_0x3f2073(0x240)]['length']){_0x23d3d2=_0x23d3d2+'<a\x20class=\x27btn\x20btn-outline-success\x20m-1\x27\x20role=\x27button\x27\x20onclick=\x27copiarA(this)\x27>'+_0x7d4a36[_0x3f2073(0x240)][_0x5cf5c7][0x0]+_0x3f2073(0x243)+_0x7d4a36[_0x3f2073(0x240)][_0x5cf5c7][0x2]+_0x3f2073(0x28c)+_0x7d4a36[_0x3f2073(0x240)][_0x5cf5c7][0x3]+_0x3f2073(0x290)+'representa\x20un\x20<strong>'+_0x7d4a36['values'][_0x5cf5c7][0x4]+_0x3f2073(0x1e5)+_0x3f2073(0x25b)+_0x7d4a36[_0x3f2073(0x240)][_0x5cf5c7][0x5]+'</a>'+_0x3f2073(0x25b)+_0x7d4a36['values'][_0x5cf5c7][0x6]+'</a><br>',_0x5cf5c7++;}$('#infoTerritorio')[_0x3f2073(0x1de)](_0x23d3d2);}}function cargarFiltroVisualCentros(_0x13e99c){const _0x39347b=_0x80912;switch(_0x13e99c[_0x39347b(0x1dc)]('id')){case _0x39347b(0x202):$(_0x39347b(0x1e2))[_0x39347b(0x1ee)](_0x39347b(0x1a2),_0x39347b(0x1cc));break;case _0x39347b(0x218):$('#valorfilC')['attr']('placeholder',_0x39347b(0x2a6));break;case _0x39347b(0x247):$(_0x39347b(0x1e2))['attr'](_0x39347b(0x1a2),_0x39347b(0x26d));break;case _0x39347b(0x1f7):$(_0x39347b(0x1e2))[_0x39347b(0x1ee)](_0x39347b(0x1a2),'RUEE\x20centro\x20Ceilab\x20(NNNNCCC)');break;}cargarInputsC(datosRecibidos),$(_0x39347b(0x1e2))[_0x39347b(0x24a)](''),$('#valorfilC')[_0x39347b(0x207)]();}function determinarATRC(){const _0x4a71db=_0x80912;switch($('#valorfilC')[_0x4a71db(0x1ee)]('placeholder')){case _0x4a71db(0x1cc):return 0x0;case _0x4a71db(0x2a6):return 0x1;case _0x4a71db(0x26d):return 0xa;case _0x4a71db(0x2ab):return 0xc;}return 0x0;}function reiniciarElementosVisualesC(){const _0x16b543=_0x80912;$(_0x16b543(0x29e))[_0x16b543(0x1de)](''),$(_0x16b543(0x1f5))[_0x16b543(0x1de)](''),$(_0x16b543(0x208))[_0x16b543(0x1de)]('');}function cargarInputsC(_0x4ec1c6){const _0x32a14b=_0x80912;let _0xf2ab0a=[];if(validarDatosRecibidos(_0x4ec1c6))$('#valorfilC')[_0x32a14b(0x207)]();else{let _0x1dc406=determinarATRC(),_0xf3719f=_0x4ec1c6['values'][_0x32a14b(0x209)]-0x1;while(_0xf3719f>=0x0){if(sessionStorage[_0x32a14b(0x284)]('nombre')==_0x4ec1c6[_0x32a14b(0x240)][_0xf3719f][0xd]||sessionStorage[_0x32a14b(0x284)]('nombre')=='ghost'){if(_0x1dc406==0xa&&_0x4ec1c6[_0x32a14b(0x240)][_0xf3719f][_0x1dc406]!=_0x32a14b(0x25f)&&_0xf2ab0a['indexOf'](_0x4ec1c6[_0x32a14b(0x240)][_0xf3719f][0x0])==-0x1)_0xf2ab0a[_0x32a14b(0x21a)](_0x4ec1c6[_0x32a14b(0x240)][_0xf3719f][0x0]);else{if(_0x1dc406==0xc&&_0x4ec1c6[_0x32a14b(0x240)][_0xf3719f][_0x1dc406]!=_0x32a14b(0x1eb)&&_0xf2ab0a[_0x32a14b(0x252)](_0x4ec1c6['values'][_0xf3719f][0x0])==-0x1)_0xf2ab0a['push'](_0x4ec1c6['values'][_0xf3719f][0x0]);else _0x1dc406!=0xa&&_0x1dc406!=0xc&&_0xf2ab0a[_0x32a14b(0x252)](_0x4ec1c6['values'][_0xf3719f][_0x1dc406])==-0x1&&_0xf2ab0a['push'](_0x4ec1c6[_0x32a14b(0x240)][_0xf3719f][_0x1dc406]);}}_0xf3719f--;}}_0xf2ab0a[_0x32a14b(0x288)](),$('#valorfilC')[_0x32a14b(0x1a6)]({'source':_0xf2ab0a}),$('#valorfilC')[_0x32a14b(0x207)]();}function buscarCentrosAsociadosC(){const _0x250378=_0x80912;reiniciarElementosVisualesC();if(validarValorFilC()){if(!validarDatosRecibidos(datosRecibidos)){let _0x55ec19=[];centroSel=[];let _0x334c68=determinarATRC(),_0x53a9b6=datosRecibidos['values'][_0x250378(0x209)]-0x1,_0xe66fdb=0x0,_0x46da5f=null;while(_0x53a9b6>=0x0){if(sessionStorage[_0x250378(0x284)](_0x250378(0x1f6))==datosRecibidos[_0x250378(0x240)][_0x53a9b6][0xd]||sessionStorage[_0x250378(0x284)](_0x250378(0x1f6))==_0x250378(0x287)){_0xe66fdb=0x0;if(_0x334c68==0xa&&datosRecibidos[_0x250378(0x240)][_0x53a9b6][_0x334c68]!=_0x250378(0x25f)&&datosRecibidos['values'][_0x53a9b6][0x0]['includes']($(_0x250378(0x1e2))[_0x250378(0x24a)]()))_0xe66fdb=0x1;else{if(_0x334c68==0xc&&datosRecibidos[_0x250378(0x240)][_0x53a9b6][_0x334c68]!=_0x250378(0x1eb)&&datosRecibidos['values'][_0x53a9b6][0x0][_0x250378(0x23e)]($(_0x250378(0x1e2))[_0x250378(0x24a)]()))_0xe66fdb=0x1;else _0x334c68!=0xa&&_0x334c68!=0xc&&datosRecibidos[_0x250378(0x240)][_0x53a9b6][_0x334c68][_0x250378(0x23e)]($(_0x250378(0x1e2))[_0x250378(0x24a)]())&&(_0xe66fdb=0x1);}_0xe66fdb==0x1&&(_0x46da5f=_0x250378(0x223)+datosRecibidos['values'][_0x53a9b6][0x0]+_0x250378(0x1df)+datosRecibidos[_0x250378(0x240)][_0x53a9b6][0x0]+_0x250378(0x231)+datosRecibidos[_0x250378(0x240)][_0x53a9b6][0x0]+_0x250378(0x23c),_0x55ec19[_0x250378(0x252)](_0x46da5f)==-0x1&&_0x55ec19['push'](_0x46da5f),centroSel[_0x250378(0x21a)](datosRecibidos[_0x250378(0x240)][_0x53a9b6]));}_0x53a9b6--;}_0x55ec19['length']>0x0?(_0x55ec19[_0x250378(0x288)](),_0x55ec19[_0x250378(0x236)](_0x47bd95=>$(_0x250378(0x1f5))[_0x250378(0x1de)]($(_0x250378(0x1f5))[_0x250378(0x1de)]()+_0x47bd95))):errorSys(_0x250378(0x29e),m1_SVC);}}else errorSys(_0x250378(0x29e),m1_SVC);$('#valorfilC')[_0x250378(0x207)]();}function validarValorFilC(){const _0x444479=_0x80912;if($(_0x444479(0x1e2))['val']()!=null&&$(_0x444479(0x1e2))[_0x444479(0x24a)]()!=undefined&&$(_0x444479(0x1e2))[_0x444479(0x24a)]()!='')return!![];return![];}function cargarInfoCentro(_0x3e09bf){const _0x2aa32f=_0x80912;$(_0x2aa32f(0x29e))[_0x2aa32f(0x1de)](''),$(_0x2aa32f(0x208))[_0x2aa32f(0x1de)](''),centroSel[_0x2aa32f(0x288)](),centroSel['forEach'](_0x16adc=>{const _0x36508a=_0x2aa32f;let _0x16e28a=null,_0x3ffe08=null;if(_0x3e09bf['toString']()==_0x16adc[0x0]){_0x16e28a=_0x36508a(0x1ef)+'role=\x27button\x27\x20onclick=\x27copiarA(this)\x27>'+_0x36508a(0x201)+_0x16adc[0x0]+_0x36508a(0x1bd)+'-\x20Departamento:\x20'+_0x16adc[0x1]+_0x36508a(0x27f)+_0x16adc[0x2]+_0x36508a(0x1bd)+_0x36508a(0x299)+_0x16adc[0x3]+_0x36508a(0x1ae)+_0x16adc[0x4]+_0x36508a(0x1bd)+'-\x20Nombre\x20Completo\x20Director/a:\x20'+_0x16adc[0x5]+_0x36508a(0x29f)+_0x16adc[0x6]+'<br>'+_0x36508a(0x1f9)+_0x16adc[0x7]+'<br>-\x20Videoconferencia:\x20'+_0x16adc[0x8]+_0x36508a(0x1bd)+'-\x20Tipo\x20Acceso:\x20'+_0x16adc[0x9]+_0x36508a(0x1db)+'-\x20Mentor\x20RED:\x20'+_0x16adc[0xa]+'\x20('+_0x36508a(0x230)+_0x16adc[0xb]+_0x36508a(0x267)+'-\x20Ceilab\x20-\x20contacto:\x20'+_0x16adc[0xc]+_0x36508a(0x1bd)+'-\x20Referente\x20de\x20PC:\x20'+_0x16adc[0xd]+_0x36508a(0x23c),$('#resultados_i')[_0x36508a(0x1de)](_0x16e28a);return;}});}function cargarInputs2021(){const _0x5598b3=_0x80912;let _0x311fa4=[];if(validarDatosRecibidos(datosRecibidos))$('#valorIng')[_0x5598b3(0x207)]();else{let _0x1d6bac=datosRecibidos[_0x5598b3(0x240)][_0x5598b3(0x209)]-0x1;while(_0x1d6bac>=0x0){_0x311fa4['indexOf'](datosRecibidos[_0x5598b3(0x240)][_0x1d6bac][0x3])==-0x1&&_0x311fa4['push'](datosRecibidos[_0x5598b3(0x240)][_0x1d6bac][0x3]),_0x1d6bac--;}}_0x311fa4[_0x5598b3(0x288)](),$(_0x5598b3(0x1fe))[_0x5598b3(0x1a6)]({'source':_0x311fa4});}function buscarReportes2021(){const _0x1aea02=_0x80912;reiniciarElementosVisuales2021(0x1);if(validarValorIng()){if(!validarDatosRecibidos(datosRecibidos)){let _0x32ec66=[];centroSel=[];let _0x3325ce=datosRecibidos[_0x1aea02(0x240)][_0x1aea02(0x209)]-0x1,_0x39b865=null;while(_0x3325ce>=0x0){datosRecibidos[_0x1aea02(0x240)][_0x3325ce][0x3]==$(_0x1aea02(0x1fe))[_0x1aea02(0x24a)]()&&(_0x39b865=_0x1aea02(0x223)+datosRecibidos[_0x1aea02(0x240)][_0x3325ce][0x1]+'\x27\x20onclick=\x27cargarGruposAsociados('+'this)\x27\x20href=\x27#grupos\x27\x20role=\x27button\x27>'+datosRecibidos['values'][_0x3325ce][0x1]+_0x1aea02(0x23c),_0x32ec66[_0x1aea02(0x21a)](_0x39b865),centroSel[_0x1aea02(0x21a)](datosRecibidos['values'][_0x3325ce])),_0x3325ce--;}_0x32ec66[_0x1aea02(0x209)]>0x0?(_0x32ec66[_0x1aea02(0x288)]((_0x17e063,_0x39eada)=>_0x17e063[0x0]+_0x17e063[0x0]-(_0x39eada[0x0]+_0x39eada[0x0])),_0x32ec66['forEach'](_0x3a87bb=>$(_0x1aea02(0x1ba))[_0x1aea02(0x1de)]($(_0x1aea02(0x1ba))[_0x1aea02(0x1de)]()+_0x3a87bb))):errorSys('#error',m1_SVC);}}else errorSys(_0x1aea02(0x29e),m1_SVC);$('#valorIng')[_0x1aea02(0x207)]();}function reiniciarElementosVisuales2021(_0x35eab7){const _0x4557fd=_0x80912;$(_0x4557fd(0x29e))[_0x4557fd(0x1de)]('');switch(_0x35eab7){case 0x1:$('#reportes')['html']('');case 0x2:$('#grupos')[_0x4557fd(0x1de)]('');case 0x3:$(_0x4557fd(0x1f0))[_0x4557fd(0x1de)]('');}}function validarValorIng(){const _0x3bb5ff=_0x80912;if($(_0x3bb5ff(0x1fe))[_0x3bb5ff(0x24a)]()!=null&&$('#valorIng')[_0x3bb5ff(0x24a)]()!=undefined&&$(_0x3bb5ff(0x1fe))[_0x3bb5ff(0x24a)]()!='')return!![];return![];}let reporteSel;function cargarGruposAsociados(_0x27c676){const _0x134c4a=_0x80912;reporteSel=null,reiniciarElementosVisuales2021(0x2),centroSel[_0x134c4a(0x288)](),centroSel['forEach'](_0x4d7448=>{const _0x55441a=_0x134c4a;let _0x19886b=null;if(_0x27c676[_0x55441a(0x1dc)]('id')==_0x4d7448[0x1]){reporteSel=_0x4d7448,_0x19886b=_0x55441a(0x237)+_0x55441a(0x27a)+_0x55441a(0x221)+_0x4d7448[0x0]+_0x55441a(0x1bd)+_0x55441a(0x21b)+_0x4d7448[0x1]+_0x55441a(0x1bd)+'Referente/s:\x20'+_0x4d7448[0x2]+_0x55441a(0x1bd)+_0x55441a(0x250)+_0x4d7448[0x3]+'<br>'+_0x55441a(0x2a3)+_0x4d7448[0x4]+_0x55441a(0x1bd)+_0x55441a(0x285)+_0x4d7448[0x5]+_0x55441a(0x1bd)+_0x55441a(0x234),_0x19886b=_0x19886b+_0x55441a(0x1ef)+_0x55441a(0x1d7);_0x4d7448[0xba]=='Sí'&&(_0x19886b=_0x19886b+_0x55441a(0x1ef)+_0x55441a(0x1a7));_0x4d7448[0xe]!=''&&(_0x19886b=_0x19886b+_0x55441a(0x1ef)+'role=\x27button\x27\x20href=\x27#info\x27\x20id=\x274A\x27\x20onclick=\x27CargarInformacion2021(this)\x27>4A</a>');_0x4d7448[0x1b]!=''&&(_0x19886b=_0x19886b+'<a\x20class=\x27btn\x20btn-outline-primary\x20text-start\x20m-2\x27'+'role=\x27button\x27\x20href=\x27#info\x27\x20id=\x274B\x27\x20onclick=\x27CargarInformacion2021(this)\x27>4B</a>');_0x4d7448[0x28]!=''&&(_0x19886b=_0x19886b+'<a\x20class=\x27btn\x20btn-outline-primary\x20text-start\x20m-2\x27'+_0x55441a(0x298));_0x4d7448[0x35]!=''&&(_0x19886b=_0x19886b+_0x55441a(0x1ef)+_0x55441a(0x21f));_0x4d7448[0x42]!=''&&(_0x19886b=_0x19886b+_0x55441a(0x1ef)+_0x55441a(0x229));_0x4d7448[0x4f]!=''&&(_0x19886b=_0x19886b+'<a\x20class=\x27btn\x20btn-outline-primary\x20text-start\x20m-2\x27'+'role=\x27button\x27\x20href=\x27#info\x27\x20id=\x275B\x27\x20onclick=\x27CargarInformacion2021(this)\x27>5B</a>');_0x4d7448[0x5c]!=''&&(_0x19886b=_0x19886b+_0x55441a(0x1ef)+'role=\x27button\x27\x20href=\x27#info\x27\x20id=\x275C\x27\x20onclick=\x27CargarInformacion2021(this)\x27>5C</a>');_0x4d7448[0x69]!=''&&(_0x19886b=_0x19886b+_0x55441a(0x1ef)+'role=\x27button\x27\x20href=\x27#info\x27\x20id=\x275D\x27\x20onclick=\x27CargarInformacion2021(this)\x27>5D</a>');_0x4d7448[0x76]!=''&&(_0x19886b=_0x19886b+'<a\x20class=\x27btn\x20btn-outline-primary\x20text-start\x20m-2\x27'+'role=\x27button\x27\x20href=\x27#info\x27\x20id=\x276A\x27\x20onclick=\x27CargarInformacion2021(this)\x27>6A</a>');_0x4d7448[0x83]!=''&&(_0x19886b=_0x19886b+_0x55441a(0x1ef)+_0x55441a(0x1d2));_0x4d7448[0x90]!=''&&(_0x19886b=_0x19886b+_0x55441a(0x1ef)+'role=\x27button\x27\x20href=\x27#info\x27\x20id=\x276C\x27\x20onclick=\x27CargarInformacion2021(this)\x27>6C</a>');_0x4d7448[0x9d]!=''&&(_0x19886b=_0x19886b+_0x55441a(0x1ef)+_0x55441a(0x265));_0x4d7448[0xab]!=''&&(_0x19886b=_0x19886b+_0x55441a(0x1ef)+_0x55441a(0x232));$(_0x55441a(0x1f8))['html'](_0x19886b);return;}});}let pp,dispM,dispP,DR_dp,DR_ve,DR_app,DR_c,DA_app,DA_p,DA_i,E_m,E_d,com;function CargarInformacion2021(_0x36145f){const _0x10391d=_0x80912;if(reporteSel!=null){reiniciarElementosVisuales2021(0x3),determinarValoresGrupos2021(_0x36145f['getAttribute']('id'));let _0x978f15=null;_0x978f15=_0x10391d(0x237)+_0x10391d(0x1ac)+_0x10391d(0x228)+dispM+_0x10391d(0x1bd)+_0x10391d(0x28a)+dispP+'<br>'+'<b>Propuesta\x20pedagógica:</b>\x20'+pp+_0x10391d(0x257)+'-\x20Dupla\x20pedagógica:\x20'+DR_dp+_0x10391d(0x1bd)+_0x10391d(0x24c)+DR_ve+_0x10391d(0x1bd)+'-\x20Adaptación\x20de\x20la\x20PP:\x20'+DR_app+_0x10391d(0x1bd)+_0x10391d(0x27d)+DR_c+_0x10391d(0x23d)+_0x10391d(0x1aa)+DA_app+_0x10391d(0x1bd)+_0x10391d(0x24b)+DA_p+_0x10391d(0x1bd)+_0x10391d(0x278)+DA_i+_0x10391d(0x1b2)+_0x10391d(0x204)+E_m+_0x10391d(0x1bd)+_0x10391d(0x266)+E_d+_0x10391d(0x23c),com!=''&&(_0x978f15=_0x978f15+_0x10391d(0x237)+'role=\x27button\x27\x20onclick=\x27copiarA(this)\x27>'+'Comentarios\x20del\x20grupo:<br>\x20'+com+_0x10391d(0x23c)),$(_0x10391d(0x1f0))[_0x10391d(0x1de)](_0x978f15);}else errorSys(_0x10391d(0x29e),m1_SVC);}function determinarValoresGrupos2021(_0xefce6a){const _0x3c0cd4=_0x80912;switch(_0xefce6a){case'4A':pp=reporteSel[0xd],dispM=reporteSel[0x17],dispP=reporteSel[0x18],DR_dp=reporteSel[0xe],DR_ve=reporteSel[0xf],DR_app=reporteSel[0x10],DR_c=reporteSel[0x11],DA_app=reporteSel[0x12],DA_p=reporteSel[0x13],DA_i=reporteSel[0x14],E_m=reporteSel[0x15],E_d=reporteSel[0x16],com=reporteSel[0x19];break;case'4B':pp=reporteSel[0x1a],dispM=reporteSel[0x24],dispP=reporteSel[0x25],DR_dp=reporteSel[0x1b],DR_ve=reporteSel[0x1c],DR_app=reporteSel[0x1d],DR_c=reporteSel[0x1e],DA_app=reporteSel[0x1f],DA_p=reporteSel[0x20],DA_i=reporteSel[0x21],E_m=reporteSel[0x22],E_d=reporteSel[0x23],com=reporteSel[0x26];break;case'4C':pp=reporteSel[0x27],dispM=reporteSel[0x31],dispP=reporteSel[0x32],DR_dp=reporteSel[0x28],DR_ve=reporteSel[0x29],DR_app=reporteSel[0x2a],DR_c=reporteSel[0x2b],DA_app=reporteSel[0x2c],DA_p=reporteSel[0x2d],DA_i=reporteSel[0x2e],E_m=reporteSel[0x2f],E_d=reporteSel[0x30],com=reporteSel[0x33];break;case'4D':pp=reporteSel[0x34],dispM=reporteSel[0x3e],dispP=reporteSel[0x3f],DR_dp=reporteSel[0x35],DR_ve=reporteSel[0x36],DR_app=reporteSel[0x37],DR_c=reporteSel[0x38],DA_app=reporteSel[0x39],DA_p=reporteSel[0x3a],DA_i=reporteSel[0x3b],E_m=reporteSel[0x3c],E_d=reporteSel[0x3d],com=reporteSel[0x40];break;case'5A':pp=reporteSel[0x41],dispM=reporteSel[0x4b],dispP=reporteSel[0x4c],DR_dp=reporteSel[0x42],DR_ve=reporteSel[0x43],DR_app=reporteSel[0x44],DR_c=reporteSel[0x45],DA_app=reporteSel[0x46],DA_p=reporteSel[0x47],DA_i=reporteSel[0x48],E_m=reporteSel[0x49],E_d=reporteSel[0x4a],com=reporteSel[0x4d];break;case'5B':pp=reporteSel[0x4e],dispM=reporteSel[0x58],dispP=reporteSel[0x59],DR_dp=reporteSel[0x4f],DR_ve=reporteSel[0x50],DR_app=reporteSel[0x51],DR_c=reporteSel[0x52],DA_app=reporteSel[0x53],DA_p=reporteSel[0x54],DA_i=reporteSel[0x55],E_m=reporteSel[0x56],E_d=reporteSel[0x57],com=reporteSel[0x5a];break;case'5C':pp=reporteSel[0x5b],dispM=reporteSel[0x65],dispP=reporteSel[0x66],DR_dp=reporteSel[0x5c],DR_ve=reporteSel[0x5d],DR_app=reporteSel[0x5e],DR_c=reporteSel[0x5f],DA_app=reporteSel[0x60],DA_p=reporteSel[0x61],DA_i=reporteSel[0x62],E_m=reporteSel[0x63],E_d=reporteSel[0x64],com=reporteSel[0x67];break;case'5D':pp=reporteSel[0x68],dispM=reporteSel[0x72],dispP=reporteSel[0x73],DR_dp=reporteSel[0x69],DR_ve=reporteSel[0x6a],DR_app=reporteSel[0x6b],DR_c=reporteSel[0x6c],DA_app=reporteSel[0x6d],DA_p=reporteSel[0x6e],DA_i=reporteSel[0x6f],E_m=reporteSel[0x70],E_d=reporteSel[0x71],com=reporteSel[0x74];break;case'6A':pp=reporteSel[0x75],dispM=reporteSel[0x7f],dispP=reporteSel[0x80],DR_dp=reporteSel[0x76],DR_ve=reporteSel[0x77],DR_app=reporteSel[0x78],DR_c=reporteSel[0x79],DA_app=reporteSel[0x7a],DA_p=reporteSel[0x7b],DA_i=reporteSel[0x7c],E_m=reporteSel[0x7d],E_d=reporteSel[0x7e],com=reporteSel[0x81];break;case'6B':pp=reporteSel[0x82],dispM=reporteSel[0x8c],dispP=reporteSel[0x8d],DR_dp=reporteSel[0x83],DR_ve=reporteSel[0x84],DR_app=reporteSel[0x85],DR_c=reporteSel[0x86],DA_app=reporteSel[0x87],DA_p=reporteSel[0x88],DA_i=reporteSel[0x89],E_m=reporteSel[0x8a],E_d=reporteSel[0x8b],com=reporteSel[0x8e];break;case'6C':pp=reporteSel[0x8f],dispM=reporteSel[0x99],dispP=reporteSel[0x9a],DR_dp=reporteSel[0x90],DR_ve=reporteSel[0x91],DR_app=reporteSel[0x92],DR_c=reporteSel[0x93],DA_app=reporteSel[0x94],DA_p=reporteSel[0x95],DA_i=reporteSel[0x96],E_m=reporteSel[0x97],E_d=reporteSel[0x98],com=reporteSel[0x9b];break;case'6D':pp=reporteSel[0x9c],dispM=reporteSel[0xa6],dispP=reporteSel[0xa7],DR_dp=reporteSel[0x9d],DR_ve=reporteSel[0x9e],DR_app=reporteSel[0x9f],DR_c=reporteSel[0xa0],DA_app=reporteSel[0xa1],DA_p=reporteSel[0xa2],DA_i=reporteSel[0xa3],E_m=reporteSel[0xa4],E_d=reporteSel[0xa5],com=reporteSel[0xa8];break;case _0x3c0cd4(0x262):pp=reporteSel[0xaa],dispM=reporteSel[0xb4],dispP=reporteSel[0xb5],DR_dp=reporteSel[0xab],DR_ve=reporteSel[0xac],DR_app=reporteSel[0xad],DR_c=reporteSel[0xae],DA_app=reporteSel[0xaf],DA_p=reporteSel[0xb0],DA_i=reporteSel[0xb1],E_m=reporteSel[0xb2],E_d=reporteSel[0xb3],com=reporteSel[0xb6];break;}}function CargarAlerta2021(){const _0x5d72f5=_0x80912;reiniciarElementosVisuales2021(0x3);let _0x2880f3=null;_0x2880f3='<a\x20class=\x27btn\x20btn-outline-success\x20text-start\x20m-2\x27'+_0x5d72f5(0x1ac)+_0x5d72f5(0x1c5)+reporteSel[0x2]+_0x5d72f5(0x1bd)+_0x5d72f5(0x249)+reporteSel[0x3]+_0x5d72f5(0x1bd)+_0x5d72f5(0x1fb)+reporteSel[0x1]+_0x5d72f5(0x1bd)+_0x5d72f5(0x255)+reporteSel[0xbc]+_0x5d72f5(0x1bd)+_0x5d72f5(0x2aa)+reporteSel[0xbd]+_0x5d72f5(0x23c),$(_0x5d72f5(0x1f0))[_0x5d72f5(0x1de)](_0x2880f3);}function CargarDatosCentro2021(){const _0x56751a=_0x80912;reiniciarElementosVisuales2021(0x3);let _0xb36f07=null,_0x400496=null;reporteSel!=null?(reporteSel[0xb9]!=''?_0x400496=reporteSel[0xb9]:_0x400496='¡sin\x20comentarios!',_0xb36f07='<a\x20class=\x27btn\x20btn-outline-success\x20text-start\x20m-2\x27'+_0x56751a(0x1ac)+_0x56751a(0x1c5)+reporteSel[0x2]+_0x56751a(0x1bd)+'<b>Centro:</b>\x20'+reporteSel[0x3]+_0x56751a(0x1bd)+_0x56751a(0x1fb)+reporteSel[0x1]+_0x56751a(0x1bd)+_0x56751a(0x29b)+reporteSel[0xb7]+'<br>'+_0x56751a(0x277)+reporteSel[0xb8]+_0x56751a(0x1bd)+_0x56751a(0x1e1)+_0x400496+'</a>',$(_0x56751a(0x1f0))[_0x56751a(0x1de)](_0xb36f07)):errorSys('#error',m1_SVC);}
+const api = new XMLHttpRequest ();
+
+let urlCompleta, datosRecibidos, validadorConsulta;
+
+let user = null; let pass = null;
+
+const fechaActual = new Date();
+const diasSemana = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', ];
+
+let gruposCentro = [];
+let centroSel = [];
+
+$( document ).ready(function() {
+
+// Página de inicio (index.html)
+$( "#eIndex" ).click(function() { validarCamposIndex(); });
+$( "#rIndex" ).click(function() { reiniciarInputsIndex(); });
+
+//Página 'main.html' (al autenticarse)
+$( "#buscarDocumentos" ).click(function() { buscarDocumentos(); });
+
+// Página Consultas S.V.C
+$( "#fruee" ).click(function() { cargarFiltroVisual(this); });
+$( "#flocalidad" ).click(function() { cargarFiltroVisual(this); });
+$( "#fdepartamento" ).click(function() { cargarFiltroVisual(this); });
+$( "#fdocumentoda" ).click(function() { cargarFiltroVisual(this); });
+$( "#fdocumentodr" ).click(function() { cargarFiltroVisual(this); });
+$( "#buscarCentrosAsociados" ).click(function() { buscarCentrosAsociados(); });
+
+// Página Info. general de centros
+$( "#frueeC" ).click(function() { cargarFiltroVisualCentros(this); });
+$( "#fdepartamentoC" ).click(function() { cargarFiltroVisualCentros(this); });
+$( "#fredglobalC" ).click(function() { cargarFiltroVisualCentros(this); });
+$( "#fceilabC" ).click(function() { cargarFiltroVisualCentros(this); });
+$( "#buscarCentrosAsociadosC" ).click(function() { buscarCentrosAsociadosC(); });
+
+// Página contacto con escuelas 2021
+$( "#buscarReportes2021" ).click(function() { buscarReportes2021(); });
+
+
+
+$("#user").keypress(function(e) {
+var code = (e.keyCode ? e.keyCode : e.which);
+if(code == 13) { validarCamposIndex(); return false; } });
+
+$("#pass").keypress(function(e) {
+var code = (e.keyCode ? e.keyCode : e.which);
+if(code == 13) { validarCamposIndex(); return false; } });
+
+$("#nombreDoc").keypress(function(e) {
+var code = (e.keyCode ? e.keyCode : e.which);
+if(code == 13) { buscarDocumentos(); return false; } });
+
+$("#valorfil").keypress(function(e) {
+  var code = (e.keyCode ? e.keyCode : e.which);
+  if(code == 13) { buscarCentrosAsociados(); $("#valorfil").focus(); return false; } });
+
+$("#valorfilC").keypress(function(e) {
+  var code = (e.keyCode ? e.keyCode : e.which);
+  if(code == 13) { buscarCentrosAsociadosC(); $("#valorfilC").focus(); return false; } });
+
+$("#valorIng").keypress(function(e) {
+  var code = (e.keyCode ? e.keyCode : e.which);
+  if(code == 13) { buscarReportes2021(); $("#valorIng").focus(); return false; } });
+
+// Al 'Salir' del sistema
+
+$( "#sSys" ).click(function() { salirSistema(); });
+
+cargarPagina ();
+
+});
+
+// Mensajes.
+
+let m1_Index = "<center><div class='alert alert-danger'role='alert'> ¡UPS! ¡No has completado todos los campos!</div></center>";
+let m2_Index = "<center><div class='alert alert-danger'role='alert'> ¡UPS! ¡Parece que hay un problema de conexión!</div></center>";
+let m3_Index = "<center><div class='alert alert-danger'role='alert'> ¡UPS! ¡Nombre de usuario y/o contraseña incorrecto/s!</div></center>";
+let m1_Main = "<p class='h3 text-secondary'>¡Bienvenid@ " + sessionStorage.getItem('nombre') + "!</p>"
+let m2_Main = "<i>Hoy es <strong>" + diasSemana [ fechaActual.getDay() ] + "</strong> del <strong>" +
+fechaActual.toLocaleDateString() + "</strong>.</i>";
+let m3_Main = "¡No hay mensajes pendientes!";
+let m1_SVC = "<center><div class='alert alert-danger m-2'role='alert'> ¡UPS! ¡No hay resultados para la consulta!</div></center>";
+
+// Funciones generales de la APP.
+
+function cargarPagina () {
+  let paginaActualCompleta = jQuery(location).attr('href');
+  let paginaActual = paginaActualCompleta.slice(
+  paginaActualCompleta.lastIndexOf("/") + 1, paginaActualCompleta.length);
+
+  if (paginaActual.indexOf("#") != -1 ) { paginaActual = paginaActual.slice(0,paginaActual.indexOf("#")); }
+  if (paginaActual != "index.html") { validarSession (); }
+  menuNavegacion (paginaActual);  
+  switch (paginaActual) {
+    case "index.html":
+      registrarSW ();
+      $("input[type='text']").focus();
+    break;
+    case "main.html":
+      $("#usuario").html(m1_Main);
+      $("#avatar").attr("src", sessionStorage.getItem('urlImagen'));
+      $("#fecha").html(m2_Main);
+      $("input[type='text']").focus();
+      getDatos("Main");
+    break;
+    case "svc.html":
+      getDatos("SVC");
+      $("#valorfil").focus();
+    break;
+    case "info_territorio.html":
+      getDatos("info_territorio");
+    break;
+    case "info_centros.html":
+      getDatos("info_centros");
+    break;
+    case "contacto_escuelas2021.html":
+      getDatos("contacto_escuelas2021");
+      $("#valorIng").focus();
+    break;
+  }  }
+
+function validarSession () {
+  if (sessionStorage.getItem('nombre') == null ||
+  sessionStorage.getItem('nombre') == 'null') {
+    window.open("index.html","_self"); }  }
+
+function registrarSW () {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./94kfd34dsla.js')
+    .then(reg => console.log('Registro de SW exitoso', reg))
+    .catch(err => console.warn('Error al tratar de registrar el SW', err)) }  }
+
+function errorSys(objeto,mensaje) {
+  $(objeto).hide();
+  $(objeto).html(mensaje);
+  $(objeto).fadeIn(); }
+
+function copiarA(val) { navigator.clipboard.writeText(val.innerText); }
+
+function salirSistema () {
+  sessionStorage.setItem('nombre', null);
+  sessionStorage.setItem('urlImagen', null);  }
+
+function getDatos (pagina) {
+  let apiKey = 'AIzaSyAVvMA2r0J3skLgWq2g0JX6facQN9BXsXM';
+  let idSheets = null; let rangoSheets = null;
+  
+  switch(pagina) {
+    case "Index":
+      hashwasm.md5($('#user').val()).then(function(response){ user = response; });
+      hashwasm.md5($('#pass').val()).then(function(response){ pass = response; }); 
+      idSheets = "1uu4nCUKc5ArODeIv5NOOfMgR3Qd-YhYckGcGLlXv_ik";
+      rangoSheets = "A:D";
+    break;
+    case "Main":
+      idSheets = "1kXcitsVB06G-hv_2d2qdBCZWKn5U3yGCNUD-dwgUvRw";
+      rangoSheets="A:A";
+    break;
+    case "Main_documentos":
+      idSheets = "1wJAU-PQ0Ydvr_Vi2n7ricKATk8S5HCkSqJyYazteCLo";
+      rangoSheets="A:B";
+      $("#buscarDocumentos").addClass("disabled");
+      $("#buscarDocumentos").text('Procesando...');      
+    break;
+    case "SVC":
+      idSheets="12kLL0bz0mwkP3EYJRrBG2aOUgEFcrRG3iIhm3n_fuQ8";
+      rangoSheets="A:AJ";
+      $("#buscarCentrosAsociados").addClass("disabled");
+      $("#buscarCentrosAsociados").text('Procesando...');
+    break;
+    case "info_territorio":
+      idSheets="1XS1ngb5eknIeXnfPsSHe5Hnk7XY5LcqQ1oD1DDjPHk0";
+      rangoSheets="A:G";
+    break;
+    case "info_centros":
+      idSheets="1-8KpueE6kIuE6fsFPdy06Ui4AhLqf2EiPcbbPVzudcE";
+      rangoSheets="A:N";
+      $("#buscarCentrosAsociadosC").addClass("disabled");
+      $("#buscarCentrosAsociadosC").text('Procesando...');
+    break;
+    case "contacto_escuelas2021":
+      idSheets="1kkFvGx51E2nypwDfdJqKYFgwsbFvPPAKSpzWdRw5Z-s";
+      rangoSheets="A:GH";
+      $("#buscarReportes2021").addClass("disabled");
+      $("#buscarReportes2021").text('Procesando...');      
+    break;
+  }
+
+  urlCompleta = "https://content-sheets.googleapis.com/v4/spreadsheets/" + 
+  idSheets + "/values/" + rangoSheets + "?access_token="+ apiKey +"&key="+ apiKey;
+  api.open('GET',urlCompleta,true);
+  api.send();
+
+  api.onreadystatechange = function () {
+    if (this.status == 200 && this.readyState == 4) {
+      datosRecibidos = JSON.parse (this.responseText);
+      switch(pagina) {
+        case "Index": loginIndex(datosRecibidos); break;
+        case "Main": cargarMensaje(datosRecibidos); break;
+        case "Main_documentos":
+          $("#buscarDocumentos").text('Buscar');
+          $("#buscarDocumentos").removeClass("disabled");          
+          cargarInputsDocumentos (datosRecibidos);
+        break;
+        case "SVC": 
+          $("#buscarCentrosAsociados").text('Buscar');
+          $("#buscarCentrosAsociados").removeClass("disabled");
+          cargarInputs(datosRecibidos); 
+        break;
+        case "info_territorio": cargarInfoTerritorio(datosRecibidos); break;
+        case "info_centros":
+          $("#buscarCentrosAsociadosC").text('Buscar');
+          $("#buscarCentrosAsociadosC").removeClass("disabled");
+          cargarInputsC (datosRecibidos);
+        break;
+        case "contacto_escuelas2021":
+          $("#buscarReportes2021").text('Buscar');
+          $("#buscarReportes2021").removeClass("disabled");
+          cargarInputs2021 (datosRecibidos);
+        break;
+      }
+    }
+  }  }
+
+function validarDatosRecibidos (datosRecibidos) {
+  if (datosRecibidos == undefined || datosRecibidos.values.length <= 1) {
+    errorSys("#error", m2_Index); 
+    return true; }
+  else { return false; }  }
+
+function menuNavegacion (p) {
+  let cadena = "";
+  cadena += '<nav class="navbar navbar-expand-lg navbar-light bg-light">';
+  cadena += '<div class="container-fluid">';
+  cadena += '<a class="navbar-brand" href="#">Menú</a>';
+  cadena += '<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">';
+  cadena += '<span class="navbar-toggler-icon"></span></button>';
+  cadena += '<div class="collapse navbar-collapse" id="navbarSupportedContent">';
+  cadena += '<ul class="navbar-nav me-auto mb-2 mb-lg-0">';
+
+  cadena += '<li class="nav-item">';
+  if (p == 'main.html') {
+    cadena += '<a class="nav-link active fw-bolder" aria-current="page" href="main.html">Home</a></li>'; }
+  else { cadena += '<a class="nav-link" aria-current="page" href="main.html">Home</a></li>'; }
+
+  cadena += '<li class="nav-item">';
+  if (p == 'svc.html') {
+    cadena += '<a class="nav-link active fw-bolder" href="svc.html">Consultas S.V.C</a></li>'; }
+  else { cadena += '<a class="nav-link" href="svc.html">Consultas S.V.C</a></li>'; }
+
+  cadena += '<li class="nav-item dropdown">';
+  cadena += '<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Registros de formularios</a>';
+  cadena += '<ul class="dropdown-menu" aria-labelledby="navbarDropdown">';
+  if (p == 'enlaces_formularios.html') {
+    cadena += '<li><a class="dropdown-item active fw-bolder" href="enlaces_formularios.html">¡Enlaces a formularios!</a></li>'; }
+  else { cadena += '<li><a class="dropdown-item" href="enlaces_formularios.html">¡Enlaces a formularios!</a></li>'; }
+  cadena += '<li><hr class="dropdown-divider"></li>';
+  cadena += '<li><a class="dropdown-item" href="#">De contacto con escuelas</a></li>';
+  cadena += '<li><a class="dropdown-item" href="#">De capacitaciones</a></li>';  
+  cadena += '<li><a class="dropdown-item" href="#">De reuniones con otros actores</a></li>';
+  cadena += '<li><hr class="dropdown-divider"></li>';
+  cadena += '<li><a  target="_blank" class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1A1IOeV9LdKIYS0eGyGmPzeMK1a-b_mXOSWWME2MtbXQ/edit?usp=sharing">¡Alertas registradas!</a></li></ul>';
+  cadena += '</li>';
+
+  cadena += '<li class="nav-item dropdown">';
+  cadena += '<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Info. de territorio</a>';
+  cadena += '<ul class="dropdown-menu" aria-labelledby="navbarDropdown">';
+  if (p == 'info_territorio.html') {
+    cadena += '<li><a class="dropdown-item active fw-bolder" href="info_territorio.html">Info. general de territorio</a></li>'; }
+  else { cadena += '<li><a class="dropdown-item" href="info_territorio.html">Info. general de territorio</a></li>'; }
+  if (p == 'info_centros.html') {
+    cadena += '<li><a class="dropdown-item active fw-bolder" href="info_centros.html">Info. general de centros</a></li>';
+  }
+  else { cadena += '<li><a class="dropdown-item" href="info_centros.html">Info. general de centros</a></li>'; }
+  cadena += '<li><hr class="dropdown-divider"></li>';
+  cadena += '<li><a target="_blank" class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1AjYu5mRAOTnpxnQhxM4s-8wwwMHTS78R0rgjUT2-Lgc/edit?usp=sharing">Altas y bajas en S.V.C</a></li>';
+  cadena += '<li><a target="_blank" class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1DPZOuHqn4SJ2bc3aKy2yWd_CdXrJJIBMvYqOR72bmM4/edit?usp=sharing">DRs reportados</a></li>';
+  cadena += '<li><a target="_blank" class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1Bx1dekcH-2axCetamcxOe9OZIZ_kOuAiYHFWen34CiU/edit?usp=sharing">Grupos de riesgo</a></li>';
+  cadena += '<li><a target="_blank" class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1XgveyUJvLRR0xi_NgzBUV_wvlHzLs0W5jQrU4dpbE6o/edit?usp=sharing">Grupos de riesgo - en detalle</a></li>';  
+  cadena += '<li><a target="_blank" class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1THlBOLMELrpWmE1Ii4zw8cIqy8c66xWTU4jprHgL_xQ/edit?usp=sharing">Grupos con problemas de eq.</a></li>';
+  cadena += '<li><hr class="dropdown-divider"></li>';
+  
+  if (p == 'contacto_escuelas2021.html') {
+    cadena += '<li><a class="dropdown-item active fw-bolder" href="contacto_escuelas2021.html">Contacto con escuelas 2021</a></li>'; }
+  else { cadena += '<li><a class="dropdown-item" href="contacto_escuelas2021.html">Contacto con escuelas 2021</a></li>'; }
+  cadena += '</ul></li>';
+  
+  if (p == 'enlaces.html') {
+    cadena += '<li class="nav-item"><a class="nav-link active fw-bolder" href="enlaces.html">Enlaces útiles</a></li>'; }
+  else { cadena += '<li class="nav-item"><a class="nav-link" href="enlaces.html">Enlaces útiles</a></li>'; }
+  
+  cadena += '<li class="nav-item"><a class="nav-link" href="index.html" id="sSys">SALIR</a></li>';
+  
+  cadena += '</ul></div></div></nav>';
+    
+  $( "#menuNavegacion" ).html(cadena);
+
+}
+
+// Página Index.
+
+function loginIndex(datosRecibidos) {
+  if (datosRecibidos == undefined || datosRecibidos.values.length <= 1) {
+    errorSys("#error", m2_Index);
+    $("#user").focus(); }
+  else {
+    let i = datosRecibidos.values.length - 1;
+    while (i >= 0) {
+      if (datosRecibidos.values[i][0] == user && datosRecibidos.values[i][1] == pass) {
+        sessionStorage.setItem('nombre', datosRecibidos.values[i][2]);
+        sessionStorage.setItem('urlImagen', datosRecibidos.values[i][3]);
+        window.open("main.html","_self")
+        return; }
+    i--; }
+    errorSys("#error", m3_Index); }  }
+
+function validarCamposIndex() {
+  if ($('#user').val() != '' && $('#pass').val() != '' ) { getDatos ("Index"); }
+  else { 
+    errorSys("#error", m1_Index);
+    $("#user").focus(); }  }
+
+function reiniciarInputsIndex () {
+  $('#error').html('');
+  $('input').val('');
+  $("#user").focus();  }
+
+// Página Main.
+
+function cargarMensaje (datosRecibidos) {
+  if (datosRecibidos == undefined || datosRecibidos.values.length <= 1) {
+    errorSys("#mensajeGestion", m3_Main); }
+  else {
+    $("#mensajeGestion").html("<div class='h6'>" +
+    datosRecibidos.values [1][0]) + "</div>"; 
+    getDatos("Main_documentos"); }  }
+
+function cargarInputsDocumentos (datosRecibidos) {
+  let valores = [];
+  if (validarDatosRecibidos (datosRecibidos) ) { $("#nombreDoc").focus(); }
+  else {
+    let i = datosRecibidos.values.length - 1;
+    while (i > 0) {
+      if (valores.indexOf(datosRecibidos.values [i][0])== -1) { 
+        valores.push(datosRecibidos.values [i][0]); }
+      i--; 
+    }
+  }
+  valores.sort();
+  $("#nombreDoc").autocomplete({ source: valores });  }
+
+function buscarDocumentos () {
+  $( "#error" ).html("");
+  $( "#resultados" ).html("");
+  if ( validarValor_nombreDoc () ) {
+    let cadena = "";
+    if ( !validarDatosRecibidos (datosRecibidos) ) {
+      let i = datosRecibidos.values.length - 1;
+      while (i > 0) {
+        if (datosRecibidos.values [i][0].includes( $("#nombreDoc").val() )) {
+          cadena = cadena + "<a class='btn btn-outline-secondary m-2' href='" + 
+          datosRecibidos.values [i][1] + "' target='_blank' role='button'>" + datosRecibidos.values [i][0] + "</a>"; }  
+      i--; }
+    }
+    if (cadena != "") { $( "#resultados" ).html(cadena); }
+    else { errorSys("#error",m1_SVC); }
+  }
+  else { errorSys("#error",m1_SVC); }  
+  $("#nombreDoc").focus();  }
+
+function validarValor_nombreDoc () {
+  if ( $("#nombreDoc").val() != null
+  && $("#nombreDoc").val() != undefined
+  && $("#nombreDoc").val() != "") { return true; }
+  return false;  }
+
+// Página S.V.C.
+
+function cargarFiltroVisual(itemSel) {
+  switch (itemSel.getAttribute("id")) {
+    case "fruee": $("#valorfil").attr("placeholder","RUEE (NNNNCCC)"); break;
+    case "flocalidad": $("#valorfil").attr("placeholder","Localidad (Ej.Quebracho)"); break;
+    case "fdepartamento": $("#valorfil").attr("placeholder","Departamento (Ej. Rocha)"); break;
+    case "fdocumentoda": $("#valorfil").attr("placeholder","Doc. DA (Ej. 47259101)"); break;
+    case "fdocumentodr": $("#valorfil").attr("placeholder","Doc. DR (Ej. rt58936592)"); break;
+  }
+  cargarInputs(datosRecibidos);
+  $("#valorfil").val("");
+  $("#valorfil").focus();  }
+
+function determinarATR () {
+  switch ($("#valorfil").attr("placeholder")) {
+  case "RUEE (NNNNCCC)": return 0;
+  case "Localidad (Ej.Quebracho)": return 3;
+  case "Departamento (Ej. Rocha)": return 2;
+  case "Doc. DA (Ej. 47259101)": return 11;
+  case "Doc. DR (Ej. rt58936592)": return 25; 
+  return 0; }  }
+
+function reiniciarElementosVisuales (val) {
+  $( "#error" ).html("");
+  switch (val) {
+    case 1: $( "#resultados_c" ).html("");
+    case 2: $( "#resultados_g" ).html("");
+    case 3: $( "#resultados_i" ).html("");
+  }  }
+
+function cargarInputs(datosRecibidos) {
+  let valores = [];
+  if (validarDatosRecibidos (datosRecibidos) ) { $("#valorfil").focus(); }
+  else {
+    let atr = determinarATR ();
+    let i = datosRecibidos.values.length - 1;
+    while (i >= 0) {
+      if (sessionStorage.getItem('nombre') == datosRecibidos.values [i][26] ||
+      sessionStorage.getItem('nombre') == "ghost") {
+        if (valores.indexOf(datosRecibidos.values [i][atr])== -1) { valores.push(datosRecibidos.values [i][atr]); }
+      }
+      i--; 
+    }
+  }
+  $( "#valorfil" ).autocomplete({ source: valores });  }
+
+function buscarCentrosAsociados() {
+  reiniciarElementosVisuales (1);
+  if ( validarValorFil () ) {
+    if ( !validarDatosRecibidos (datosRecibidos) ) {
+      let valores = []; gruposCentro = []; 
+      let atr = determinarATR ();
+      let i = datosRecibidos.values.length - 1;
+      let cadena = null;
+      while (i >= 0) {
+        if (sessionStorage.getItem('nombre') == datosRecibidos.values [i][26] ||
+        sessionStorage.getItem('nombre') == "ghost") {
+          if (datosRecibidos.values [i][atr].includes( $("#valorfil").val() )) {
+            cadena = "<a class='btn btn-outline-secondary m-2' id='" +
+            datosRecibidos.values [i][0] + "' onclick='cargarGrupos(" + 
+            datosRecibidos.values [i][0] + ")' href='#resultados_g' role='button'>" +
+            datosRecibidos.values [i][0] + "</a>";
+            if (valores.indexOf(cadena)==-1) { valores.push(cadena); }
+          gruposCentro.push(datosRecibidos.values [i]); } 
+        }
+        i--; 
+      }
+      if (valores.length > 0) {
+        valores.sort();
+        valores.forEach(e => $( "#resultados_c" ).html( $( "#resultados_c" ).html() + e ));
+      }
+      else { errorSys("#error",m1_SVC); }
+    }
+  }
+  else { errorSys("#error",m1_SVC); }
+  $("#valorfil").focus();  }
+
+function validarValorFil () {
+  if ( $("#valorfil").val() != null
+  && $("#valorfil").val() != undefined
+  && $("#valorfil").val() != "") { return true; }
+  return false;  }
+
+function cargarGrupos (rueeID) {
+  reiniciarElementosVisuales (2);
+  gruposCentro.sort((a, b) => ( a[9] + a[8]) - (b[9] + b[8]) );
+  gruposCentro.forEach( e => {
+    let cadena = null; let valor = null;
+    if (rueeID.toString() == e [0]) {
+      cadena = "<a class='btn btn-outline-success m-2' id='" +
+      e [0] + e [8] + e[9] + "' onclick='cargarInfo(this)' " +
+      " href='#resultados_i' role='button'>" +
+      e [8] + e[9] + "</a>";
+      $( "#resultados_g" ).html( $( "#resultados_g" ).html() + cadena )
+    } 
+  }); }
+
+function cargarInfo (rueeGID) {
+  reiniciarElementosVisuales (3);
+  gruposCentro.forEach( e => {
+    let cadena = null;
+    if (rueeGID.getAttribute('id') == e[0] + e [8] + e[9]) {
+      cadena = "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' onclick='copiarA(this)'>" +
+      "<b>Información del centro: </b>" + e [0] + " (" + "<b>ID N°</b> " + e [1]  + ")<br>" +
+      "Departamento: " + e [2] + ", " + e [3] + "<br>" + e [4]  + " N° " + e [5] + " " + e [34] +
+      "<br> Grupo " + e [8] + e [9] + " " + e [7] + "</a>" + 
+      "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' onclick='copiarA(this)'>" +
+      "<b>Docente de aula: </b>" + e [12] + " " + e [13] + " (" + e [11] + "), " + "<br>Correo electrónico (DA): " + e [14] + "<br>Contacto tel. / celular: " + e [15] + 
+      "<br><b>Proveedor</b>: " + e [19] +
+      "<br><b>Docente remoto: </b>" + e [22] + " " + e [23] + " (" + e [25] + "), " + "<br>Correo electrónico (DR): " + e [24] +
+      "</a><a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' onclick='copiarA(this)'>" +
+      "<b>Información de clases de Pensamiento Computacional</b><br>" +
+      "Coordinado para los días: " + e [30] + "<br>" +
+      "A la hora: " + e [31] + "<br>" +
+      "Desde la fecha: " + e [33] + "</a>";
+      $( "#resultados_i" ).html(cadena);
+      return;
+    }
+  });  }
+
+// Página Info. general de territorio
+
+function cargarInfoTerritorio (datosRecibidos) {
+  if (datosRecibidos == undefined || datosRecibidos.values.length <= 1 ) {
+      errorSys("#a", m2_Index);
+      $( "#infoTerritorio" ).html(""); }
+  else {
+    $( "#a" ).html("<strong>¡Atención!</strong> Última actualización del sistema "+
+    "desde S.V.C: <strong>" + datosRecibidos.values [0][2] + "</strong>");
+    let cadena = null;
+    cadena = "- " + datosRecibidos.values [0][0] + ": <strong>" + datosRecibidos.values [0][1] + "</strong><br>" +
+    "- " + datosRecibidos.values [1][0] + ": <strong>" + datosRecibidos.values [1][1] + "</strong><hr>";
+    let i = 2;
+    while (i < datosRecibidos.values.length) {
+      cadena = cadena +
+      "<a class='btn btn-outline-success m-1' role='button' onclick='copiarA(this)'>" + 
+      datosRecibidos.values [i][0] + ", tiene <strong>" + datosRecibidos.values [i][2] +
+      "</strong> grupos distribuidos en <strong>" + datosRecibidos.values [i][3] + "</strong> centros (" +
+      "representa un <strong>" + datosRecibidos.values [i][4] + "</strong> % del total de centros)</a>" +
+      "<a class='btn btn-outline-success m-1' role='button' onclick='copiarA(this)'>" + datosRecibidos.values [i][5] + "</a>" +
+      "<a class='btn btn-outline-success m-1' role='button' onclick='copiarA(this)'>" + datosRecibidos.values [i][6] + "</a><br>" 
+      i++;
+    }
+    $( "#infoTerritorio" ).html(cadena); }  }
+
+// Página Info. general de centros
+
+function cargarFiltroVisualCentros(itemSel) {
+  switch (itemSel.getAttribute("id")) {
+    case "frueeC": $("#valorfilC").attr("placeholder","RUEE (NNNNCCC)"); break;
+    case "fdepartamentoC": $("#valorfilC").attr("placeholder","Departamento (Ej. Rocha)"); break;
+    case "fredglobalC": $("#valorfilC").attr("placeholder","RUEE centro Red Global (NNNNCCC)"); break;
+    case "fceilabC": $("#valorfilC").attr("placeholder","RUEE centro Ceilab (NNNNCCC)"); break;
+  }
+  cargarInputsC(datosRecibidos);
+  $("#valorfilC").val("");
+  $("#valorfilC").focus(); }
+
+function determinarATRC () {
+  switch ($("#valorfilC").attr("placeholder")) {
+    case "RUEE (NNNNCCC)": return 0;
+    case "Departamento (Ej. Rocha)": return 1;
+    case "RUEE centro Red Global (NNNNCCC)": return 10;
+    case "RUEE centro Ceilab (NNNNCCC)": return 12; }   
+  return 0;  }
+
+function reiniciarElementosVisualesC () {
+  $( "#error" ).html("");
+  $( "#resultados_c" ).html("");
+  $( "#resultados_i" ).html("");  }
+
+function cargarInputsC(datosRecibidos) {
+  let valores = [];
+  if (validarDatosRecibidos (datosRecibidos) ) { $("#valorfilC").focus(); }
+  else {
+    let atr = determinarATRC (); 
+    let i = datosRecibidos.values.length - 1;
+    while (i >= 0) {
+      if (sessionStorage.getItem('nombre') == datosRecibidos.values [i][13] ||
+      sessionStorage.getItem('nombre') == "ghost") {
+        if (atr == 10 && 
+        datosRecibidos.values [i][atr] != "¡Sin mentor RED!" &&
+        valores.indexOf(datosRecibidos.values [i][0]) == -1) { valores.push(datosRecibidos.values [i][0]); }
+        else if (atr == 12 &&
+        datosRecibidos.values [i][atr] != "¡Sin mentor Ceilab!" &&
+        valores.indexOf(datosRecibidos.values [i][0]) == -1) { valores.push(datosRecibidos.values [i][0]); }
+        else if (atr != 10 && atr != 12 &&
+        valores.indexOf(datosRecibidos.values [i][atr])== -1) { valores.push(datosRecibidos.values [i][atr]); }
+      }
+      i--; 
+    }
+  }
+  valores.sort();
+  $("#valorfilC").autocomplete({ source: valores });
+  $("#valorfilC").focus();  }
+
+function buscarCentrosAsociadosC () {
+  reiniciarElementosVisualesC ();
+  if (validarValorFilC () ) {
+    if ( !validarDatosRecibidos (datosRecibidos) ) {
+      let valores = []; centroSel = [];
+      let atr = determinarATRC ();
+      let i = datosRecibidos.values.length - 1;
+      let li = 0;
+      let cadena = null; 
+      while (i >= 0) {
+        if (sessionStorage.getItem('nombre') == datosRecibidos.values [i][13] ||
+        sessionStorage.getItem('nombre') == "ghost") {
+          li = 0;
+          if (atr == 10 && datosRecibidos.values [i][atr] != "¡Sin mentor RED!" &&
+          datosRecibidos.values [i][0].includes($("#valorfilC").val()) ) { li = 1; }
+          else if (atr == 12 && datosRecibidos.values [i][atr] != "¡Sin mentor Ceilab!" &&
+          datosRecibidos.values [i][0].includes($("#valorfilC").val()) ) { li = 1; }
+          else if (atr != 10 && atr != 12 &&
+          datosRecibidos.values [i][atr].includes($("#valorfilC").val()) ) { li = 1; } 
+          if (li==1) {
+            cadena = "<a class='btn btn-outline-secondary m-2' id='" +
+            datosRecibidos.values [i][0] + "' onclick='cargarInfoCentro(" + 
+            datosRecibidos.values [i][0] + ")' href='#resultados_i' role='button'>" +
+            datosRecibidos.values [i][0] + "</a>";
+            if (valores.indexOf(cadena)==-1) { valores.push(cadena); }
+            centroSel.push(datosRecibidos.values [i]);
+          } 
+        }
+        i--; 
+      }
+      if (valores.length > 0) {
+        valores.sort();
+        valores.forEach(e => $( "#resultados_c" ).html( $( "#resultados_c" ).html() + e ));
+      }
+      else { errorSys("#error",m1_SVC); }
+    }
+  }
+  else { errorSys("#error",m1_SVC); }
+  $("#valorfilC").focus();  }
+
+function validarValorFilC () {
+  if ( $("#valorfilC").val() != null
+  && $("#valorfilC").val() != undefined
+  && $("#valorfilC").val() != "") { return true; }
+  return false;  }
+
+function cargarInfoCentro (rueeID) {
+  $( "#error" ).html("");
+  $( "#resultados_i" ).html("");
+  centroSel.sort();
+  centroSel.forEach( e => {
+    let cadena = null;
+    let valor = null;
+    if (rueeID.toString() == e [0]) {
+      cadena = "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' onclick='copiarA(this)'>" +
+      "<b>Información del centro: </b>" + e [0] + "<br>" +
+      "- Departamento: " + e [1] + "<br>- Teléfonos (centro): " + e [2] + "<br>" +
+      "- Email/s (centro): " + e [3] + "<br>- Proyectos de abordaje en curso: " +  e [4] + "<br>" +
+      "- Nombre Completo Director/a: " + e [5] + "<br>- Teléfonos Director/a: " +  e [6] + "<br>" +
+      "- Email/s Director/a: " + e [7] + "<br>- Videoconferencia: " + e [8] + "<br>" +
+      "- Tipo Acceso: " + e [9] + "<br><br>" +
+      "- Mentor RED: " + e [10] + " (" + "correo: " + e [11] + ")<br>" +
+      "- Ceilab - contacto: " + e [12] + "<br>" +
+      "- Referente de PC: " + e [13] + "</a>";
+      $( "#resultados_i" ).html(cadena);
+      return;
+    } 
+  });  }
+
+// Página contacto con escuelas 2021
+
+function cargarInputs2021 () {
+  let valores = [];
+  if (validarDatosRecibidos (datosRecibidos) ) { $("#valorIng").focus(); }
+  else {
+    let i = datosRecibidos.values.length - 1;
+    while (i >= 0) {
+        if (valores.indexOf(datosRecibidos.values [i][3])== -1) { 
+          valores.push(datosRecibidos.values [i][3]); }
+      i--; 
+    }
+  }
+  valores.sort();
+  $( "#valorIng" ).autocomplete({ source: valores }); }
+
+function buscarReportes2021 () {
+  reiniciarElementosVisuales2021 (1);
+  if (validarValorIng () ) {
+    if ( !validarDatosRecibidos (datosRecibidos) ) {
+      let valores = []; centroSel = [];
+      let i = datosRecibidos.values.length - 1;
+      let cadena = null;
+      while (i >= 0) {
+        if ( datosRecibidos.values [i][3] == $("#valorIng").val() ) {
+          cadena = "<a class='btn btn-outline-secondary m-2' id='" +
+          datosRecibidos.values [i][1] + "' onclick='cargarGruposAsociados(" + 
+          "this)' href='#grupos' role='button'>" +
+          datosRecibidos.values [i][1] + "</a>";
+          valores.push(cadena);
+          centroSel.push(datosRecibidos.values [i]);
+        }
+        i--;
+      }
+      if (valores.length > 0) {
+        //valores.sort();
+        valores.sort((a, b) => ( a[0] + a[0]) - (b[0] + b[0]) );
+        valores.forEach(e => $( "#reportes" ).html( $( "#reportes" ).html() + e )); }
+      else { errorSys("#error",m1_SVC); }
+    }
+  }
+  else { errorSys("#error",m1_SVC); }
+  $("#valorIng").focus();  }
+
+function reiniciarElementosVisuales2021 (val) {
+  $( "#error" ).html("");
+  switch (val) {
+    case 1: $( "#reportes" ).html("");
+    case 2: $( "#grupos" ).html("");
+    case 3: $( "#info" ).html("");
+  }  }
+
+function validarValorIng() {
+  if ( $("#valorIng").val() != null
+  && $("#valorIng").val() != undefined
+  && $("#valorIng").val() != "") { return true; }
+  return false;  }
+
+let reporteSel;
+
+function cargarGruposAsociados (reporteFecha) {
+  reporteSel = null;
+  reiniciarElementosVisuales2021 (2);
+  centroSel.sort();
+  centroSel.forEach( e => {
+    let cadena = null;
+    if (reporteFecha.getAttribute("id") == e [1]) {
+      reporteSel = e;
+      cadena = "<a class='btn btn-outline-success text-start m-2'" +
+      "role='button' id='Centro' onclick='copiarA(this)'>" + 
+      "Fecha de creación del reporte: " + e [0] + "<br>" +
+      "Fecha de registro del reporte: " + e [1] + "<br>" +
+      "Referente/s: " + e [2] + "<br>" +
+      "Centro: " + e [3] + "<br>" +
+      "Objetivo principal del contacto: " + e [4] + "<br>" +
+      "Tipo de contacto: " + e [5] + "<br>" +
+      "</a><br>";
+
+      cadena = cadena + "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' href='#info' id='Centro' onclick='CargarDatosCentro2021()'>Centro</a>";
+
+      if (e [186] == "Sí") {
+      cadena = cadena + "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' href='#info' id='Alerta' onclick='CargarAlerta2021()'>¡Alerta reportada!</a>"; }
+
+      if (e [14] != "") {
+      cadena = cadena + "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' href='#info' id='4A' onclick='CargarInformacion2021(this)'>4A</a>"; }
+      if (e [27] != "") {
+      cadena = cadena + "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' href='#info' id='4B' onclick='CargarInformacion2021(this)'>4B</a>"; }
+      if (e [40] != "") {
+      cadena = cadena + "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' href='#info' id='4C' onclick='CargarInformacion2021(this)'>4C</a>"; }
+      if (e [53] != "") {
+      cadena = cadena + "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' href='#info' id='4D' onclick='CargarInformacion2021(this)'>4D</a>"; }
+ 
+      if (e [66] != "") {
+      cadena = cadena + "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' href='#info' id='5A' onclick='CargarInformacion2021(this)'>5A</a>"; }
+      if (e [79] != "") {
+      cadena = cadena + "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' href='#info' id='5B' onclick='CargarInformacion2021(this)'>5B</a>"; }
+      if (e [92] != "") {
+      cadena = cadena + "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' href='#info' id='5C' onclick='CargarInformacion2021(this)'>5C</a>"; }
+      if (e [105] != "") {
+      cadena = cadena + "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' href='#info' id='5D' onclick='CargarInformacion2021(this)'>5D</a>"; }
+
+      if (e [118] != "") {
+      cadena = cadena + "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' href='#info' id='6A' onclick='CargarInformacion2021(this)'>6A</a>"; }
+      if (e [131] != "") {
+      cadena = cadena + "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' href='#info' id='6B' onclick='CargarInformacion2021(this)'>6B</a>"; }
+      if (e [144] != "") {
+      cadena = cadena + "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' href='#info' id='6C' onclick='CargarInformacion2021(this)'>6C</a>"; }
+      if (e [157] != "") {
+      cadena = cadena + "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' href='#info' id='6D' onclick='CargarInformacion2021(this)'>6D</a>"; }
+      
+      if (e [171] != "") {
+      cadena = cadena + "<a class='btn btn-outline-primary text-start m-2'" +
+      "role='button' href='#info' id='Multi.' onclick='CargarInformacion2021(this)'>Multi.</a>"; }
+      
+      $( "#grupos" ).html(cadena);
+      return;
+    } 
+  }); }
+
+
+let pp, dispM, dispP, DR_dp, DR_ve, DR_app, DR_c, DA_app, DA_p, DA_i, E_m, E_d, com;
+
+function CargarInformacion2021 (val) {
+  if (reporteSel != null) {
+    reiniciarElementosVisuales2021(3);
+    determinarValoresGrupos2021 (val.getAttribute("id"))
+    let cadena = null;
+
+    cadena = "<a class='btn btn-outline-success text-start m-2'" +
+    "role='button' onclick='copiarA(this)'>" +
+    "<b>Disponibilidad de máquinas:</b> " + dispM + "<br>" +
+    "<b>Disponibilidad de placas Micro:Bit:</b> " + dispP + "<br>" +
+    "<b>Propuesta pedagógica:</b> " + pp + "<br><br><b>Dimensión “Docente remoto”</b><br>" +
+    "- Dupla pedagógica: " + DR_dp + "<br>" +
+    "- Vínculo con estudiantes: " + DR_ve + "<br>" +
+    "- Adaptación de la PP: " + DR_app + "<br>" +
+    "- Compromiso: " + DR_c + "<br><br><b>Dimensión “Docente de aula”</b><br>" +
+    "- Apropiación de las propuestas pedagógicas: " + DA_app + "<br>" +
+    "- Proactividad: " + DA_p + "<br>" +
+    "- Intereses en formación PC: " + DA_i +
+    "<br><br><b>Desempeño del grupo</b><br>" +
+    "- Motivación: " + E_m + "<br>" +
+    "- Desempeño: " + E_d + "</a>";
+    
+    if (com != "") {
+      cadena = cadena + "<a class='btn btn-outline-success text-start m-2'" +
+      "role='button' onclick='copiarA(this)'>" +
+      "Comentarios del grupo:<br> " + com + "</a>";
+    }
+    
+    $( "#info" ).html(cadena);
+  }
+  else { errorSys("#error",m1_SVC); }   }
+
+function determinarValoresGrupos2021 (val) {
+  switch (val) {
+    case "4A":
+      pp = reporteSel [13]; dispM = reporteSel [23]; dispP = reporteSel [24];
+      DR_dp = reporteSel [14]; DR_ve = reporteSel [15]; DR_app = reporteSel [16]; DR_c = reporteSel [17];
+      DA_app = reporteSel [18]; DA_p = reporteSel [19]; DA_i = reporteSel [20];
+      E_m = reporteSel [21]; E_d = reporteSel [22]; com = reporteSel [25];   
+    break;
+    case "4B":
+      pp = reporteSel [26]; dispM = reporteSel [36]; dispP = reporteSel [37];
+      DR_dp = reporteSel [27]; DR_ve = reporteSel [28]; DR_app = reporteSel [29]; DR_c = reporteSel [30];
+      DA_app = reporteSel [31]; DA_p = reporteSel [32]; DA_i = reporteSel [33];
+      E_m = reporteSel [34]; E_d = reporteSel [35]; com = reporteSel [38];   
+    break;
+    case "4C":
+      pp = reporteSel [39]; dispM = reporteSel [49]; dispP = reporteSel [50];
+      DR_dp = reporteSel [40]; DR_ve = reporteSel [41]; DR_app = reporteSel [42]; DR_c = reporteSel [43];
+      DA_app = reporteSel [44]; DA_p = reporteSel [45]; DA_i = reporteSel [46];
+      E_m = reporteSel [47]; E_d = reporteSel [48]; com = reporteSel [51];   
+    break;
+    case "4D":
+      pp = reporteSel [52]; dispM = reporteSel [62]; dispP = reporteSel [63];
+      DR_dp = reporteSel [53]; DR_ve = reporteSel [54]; DR_app = reporteSel [55]; DR_c = reporteSel [56];
+      DA_app = reporteSel [57]; DA_p = reporteSel [58]; DA_i = reporteSel [59];
+      E_m = reporteSel [60]; E_d = reporteSel [61]; com = reporteSel [64];   
+    break;    
+    case "5A":
+      pp = reporteSel [65]; dispM = reporteSel [75]; dispP = reporteSel [76];
+      DR_dp = reporteSel [66]; DR_ve = reporteSel [67]; DR_app = reporteSel [68]; DR_c = reporteSel [69];
+      DA_app = reporteSel [70]; DA_p = reporteSel [71]; DA_i = reporteSel [72];
+      E_m = reporteSel [73]; E_d = reporteSel [74]; com = reporteSel [77];    
+    break;
+    case "5B":
+      pp = reporteSel [78]; dispM = reporteSel [88]; dispP = reporteSel [89];
+      DR_dp = reporteSel [79]; DR_ve = reporteSel [80]; DR_app = reporteSel [81]; DR_c = reporteSel [82];
+      DA_app = reporteSel [83]; DA_p = reporteSel [84]; DA_i = reporteSel [85];
+      E_m = reporteSel [86]; E_d = reporteSel [87]; com = reporteSel [90];    
+    break;    
+    case "5C":
+      pp = reporteSel [91]; dispM = reporteSel [101]; dispP = reporteSel [102];
+      DR_dp = reporteSel [92]; DR_ve = reporteSel [93]; DR_app = reporteSel [94]; DR_c = reporteSel [95];
+      DA_app = reporteSel [96]; DA_p = reporteSel [97]; DA_i = reporteSel [98];
+      E_m = reporteSel [99]; E_d = reporteSel [100]; com = reporteSel [103];
+    break;
+    case "5D":
+      pp = reporteSel [104]; dispM = reporteSel [114]; dispP = reporteSel [115];
+      DR_dp = reporteSel [105]; DR_ve = reporteSel [106]; DR_app = reporteSel [107]; DR_c = reporteSel [108];
+      DA_app = reporteSel [109]; DA_p = reporteSel [110]; DA_i = reporteSel [111];
+      E_m = reporteSel [112]; E_d = reporteSel [113]; com = reporteSel [116];    
+    break;
+    case "6A":
+      pp = reporteSel [117]; dispM = reporteSel [127]; dispP = reporteSel [128];
+      DR_dp = reporteSel [118]; DR_ve = reporteSel [119]; DR_app = reporteSel [120]; DR_c = reporteSel [121];
+      DA_app = reporteSel [122]; DA_p = reporteSel [123]; DA_i = reporteSel [124];
+      E_m = reporteSel [125]; E_d = reporteSel [126]; com = reporteSel [129];    
+    break; 
+    case "6B":
+      pp = reporteSel [130]; dispM = reporteSel [140]; dispP = reporteSel [141];
+      DR_dp = reporteSel [131]; DR_ve = reporteSel [132]; DR_app = reporteSel [133]; DR_c = reporteSel [134];
+      DA_app = reporteSel [135]; DA_p = reporteSel [136]; DA_i = reporteSel [137];
+      E_m = reporteSel [138]; E_d = reporteSel [139]; com = reporteSel [142];    
+    break;
+    case "6C":
+      pp = reporteSel [143]; dispM = reporteSel [153]; dispP = reporteSel [154];
+      DR_dp = reporteSel [144]; DR_ve = reporteSel [145]; DR_app = reporteSel [146]; DR_c = reporteSel [147];
+      DA_app = reporteSel [148]; DA_p = reporteSel [149]; DA_i = reporteSel [150];
+      E_m = reporteSel [151]; E_d = reporteSel [152]; com = reporteSel [155];    
+    break;
+    case "6D":
+      pp = reporteSel [156]; dispM = reporteSel [166]; dispP = reporteSel [167];
+      DR_dp = reporteSel [157]; DR_ve = reporteSel [158]; DR_app = reporteSel [159]; DR_c = reporteSel [160];
+      DA_app = reporteSel [161]; DA_p = reporteSel [162]; DA_i = reporteSel [163];
+      E_m = reporteSel [164]; E_d = reporteSel [165]; com = reporteSel [168];    
+    break;
+    case "Multi.":
+      pp = reporteSel [170]; dispM = reporteSel [180]; dispP = reporteSel [181];
+      DR_dp = reporteSel [171]; DR_ve = reporteSel [172]; DR_app = reporteSel [173]; DR_c = reporteSel [174];
+      DA_app = reporteSel [175]; DA_p = reporteSel [176]; DA_i = reporteSel [177];
+      E_m = reporteSel [178]; E_d = reporteSel [179]; com = reporteSel [182];    
+    break;  
+  }    }
+
+function CargarAlerta2021 () {
+  reiniciarElementosVisuales2021(3);
+  let cadena = null;
+  cadena = "<a class='btn btn-outline-success text-start m-2'" +
+  "role='button' onclick='copiarA(this)'>" +
+  "<b>Referente/s:</b> " + reporteSel [2] + "<br>" +
+  "<b>Centro:</b> " + reporteSel [3] + "<br>" +
+  "<b>Fecha de registro del reporte:</b> " + reporteSel [1] + "<br>" +
+  "<b>Grupos reportados:</b> " + reporteSel [188] + "<br>" +
+  "<b>Comentarios:</b><br>" + reporteSel [189] +  "</a>";
+  $( "#info" ).html(cadena);  }
+
+function CargarDatosCentro2021 () {
+  reiniciarElementosVisuales2021(3);
+  let cadena = null, com_c = null;
+  if (reporteSel != null) {
+    if (reporteSel [185] != "") { com_c = reporteSel [185];  }
+    else { com_c = "¡sin comentarios!"; }
+    cadena = "<a class='btn btn-outline-success text-start m-2'" +
+    "role='button' onclick='copiarA(this)'>" +
+    "<b>Referente/s:</b> " + reporteSel [2] + "<br>" +
+    "<b>Centro:</b> " + reporteSel [3] + "<br>" +
+    "<b>Fecha de registro del reporte:</b> " + reporteSel [1] + "<br>" +
+    "<b>Clima general de trabajo:</b> " + reporteSel [183] + "<br>" +
+    "<b>Apoyo del equipo de dirección:</b> " + reporteSel [184] + "<br>" +  
+    "<b>Comentarios del centro:</b><br>" + com_c + "</a>";
+    $( "#info" ).html(cadena); }
+  else { errorSys("#error",m1_SVC); }   }
