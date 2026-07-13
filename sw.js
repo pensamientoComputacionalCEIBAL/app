@@ -1,10 +1,10 @@
-const CACHE = 'genially-pwa-v1';
+const CACHE = 'genially-pwa-v2';
 const SHELL = [
   './',
   './index.html',
   './manifest.json',
-  './icons/icon-192.png',
-  './icons/icon-512.png'
+  './icon-192.png',
+  './icon-512.png'
 ];
 
 self.addEventListener('install', (e) => {
