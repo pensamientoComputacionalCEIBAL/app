@@ -13,7 +13,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Genially">
-  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
 
   <style>
     :root {
@@ -27,8 +27,10 @@
       width: 100%;
       overflow: hidden;
       background: var(--navy);
-      font-family: 'Roboto', -apple-system, sans-serif;
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 400;
     }
+
     #frame {
       position: fixed;
       inset: 0;
@@ -36,6 +38,7 @@
       height: 100%;
       border: 0;
     }
+
     #splash {
       position: fixed;
       inset: 0;
@@ -60,6 +63,61 @@
     }
     #splash p { font-size: 14px; letter-spacing: .3px; color: #cfe0e3; }
     @keyframes spin { to { transform: rotate(360deg); } }
+
+    #installBtn {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+      display: none;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      background: var(--coral);
+      color: #fff;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 400;
+      border: 0;
+      border-radius: 28px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.28);
+      cursor: pointer;
+      z-index: 20;
+    }
+    #installBtn.show { display: inline-flex; }
+    #installBtn svg { width: 18px; height: 18px; }
+
+    #iosHint {
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+      display: none;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      background: var(--teal);
+      color: #fff;
+      font-size: 14px;
+      line-height: 1.35;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.28);
+      z-index: 20;
+    }
+    #iosHint.show { display: flex; }
+    #iosHint b { font-weight: 500; }
+    #iosClose {
+      margin-left: auto;
+      flex: none;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.22);
+      color: #fff;
+      border: 0;
+      font-size: 15px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -68,7 +126,7 @@
     <p>Cargando recurso…</p>
   </div>
 
-  <!-- ▼▼▼ PEGÁ ACÁ LA URL DE TU GENIALLY (formato: https://view.genial.ly/XXXXXXXX) ▼▼▼ -->
+  <!-- PEGA ACA LA URL DE TU GENIALLY -->
   <iframe
     id="frame"
     src="https://view.genially.com/6a1efdd85bd741f200b39704"
@@ -77,9 +135,52 @@
     referrerpolicy="no-referrer-when-downgrade"
     onload="document.getElementById('splash').classList.add('hidden')">
   </iframe>
-  <!-- ▲▲▲ FIN URL ▲▲▲ -->
+
+  <button id="installBtn" type="button">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3v12"/><path d="M7 12l5 5 5-5"/><path d="M5 21h14"/>
+    </svg>
+    Instalar app
+  </button>
+
+  <div id="iosHint">
+    <span>Para instalar: toc&aacute; <b>Compartir</b> y luego <b>&ldquo;Agregar a inicio&rdquo;</b>.</span>
+    <button id="iosClose" type="button" aria-label="Cerrar">&times;</button>
+  </div>
 
   <script>
+    const installBtn = document.getElementById('installBtn');
+    const iosHint = document.getElementById('iosHint');
+    const iosClose = document.getElementById('iosClose');
+    let deferredPrompt = null;
+
+    const isStandalone =
+      window.matchMedia('(display-mode: standalone)').matches ||
+      window.navigator.standalone === true;
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      if (!isStandalone) installBtn.classList.add('show');
+    });
+
+    installBtn.addEventListener('click', async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      installBtn.classList.remove('show');
+    });
+
+    window.addEventListener('appinstalled', () => {
+      installBtn.classList.remove('show');
+      deferredPrompt = null;
+    });
+
+    const isIOS = /iphone|ipad|ipod/i.test(window.navigator.userAgent);
+    if (isIOS && !isStandalone) iosHint.classList.add('show');
+    iosClose.addEventListener('click', () => iosHint.classList.remove('show'));
+
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('sw.js').catch(() => {});
